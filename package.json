@@ -2,13 +2,18 @@
   "name": "royal-hackaway-v7.com",
   "version": "0.1.0",
   "private": true,
+  "url": {
+    "type": "git",
+    "url": "https://github.com/rhul-compsoc/royal-hackaway-v7.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check": "prettier . --check --cache",
-    "fmt": "prettier . --write"
+    "lint:fix": "next lint --fix",
+    "fmt": "prettier . --check --cache",
+    "fmt:fix": "prettier . --write"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
