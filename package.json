@@ -1,10 +1,14 @@
 {
-  "name": "royal-hackaway-v7.com",
+  "name": "royal-hackaway-v9.com",
   "version": "0.1.0",
   "private": true,
   "url": {
     "type": "git",
-    "url": "https://github.com/rhul-compsoc/royal-hackaway-v7.com"
+    "url": "https://github.com/rhul-compsoc/royal-hackaway-v9.com"
+  },
+  "author": {
+    "name": "RHUL Computing Society",
+    "email": "computing@royalholloway.su"
   },
   "scripts": {
     "dev": "next dev",
@@ -16,26 +20,25 @@
     "fmt:fix": "prettier . --write"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-regular-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "next": "^14.2.23",
-    "react": "^18",
-    "react-dom": "^18"
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-regular-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.1",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.7",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "eslint": "^8",
+    "@types/node": "^20.19.27",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^8.57.1",
     "eslint-config-next": "14.0.4",
-    "postcss": "^8",
-    "prettier": "^3.4.2",
-    "tailwindcss": "^3",
-    "typescript": "^5"
+    "postcss": "^8.5.6",
+    "prettier": "^3.7.4",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
   }
 }
