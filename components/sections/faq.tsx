@@ -37,8 +37,7 @@ export const FAQ = (): JSX.Element => {
             This is for fire safety and accountability reasons.`,
           },
           {
-            title:
-              'I have additional requirements or accessibility needs, is the event suitable for me?',
+            title: 'I have additional requirements or accessibility needs, is the event suitable for me?',
             body: `The venue is wheelchair accessible and has disabled toilets.
             There are gender neutral toilets in the library which is next door.
             There will be a quieter hacking room available for individuals or teams who require a calmer space to work,
@@ -68,11 +67,7 @@ export const FAQ = (): JSX.Element => {
       />
       <div className="pt-10">
         <H4 text="Got another question?" />
-        <BigDiscordBlink
-          text="Join our Discord!"
-          href="https://discord.gg/XptvsDZwXc"
-          target="_blank"
-        />
+        <BigDiscordBlink text="Join our Discord!" href="https://discord.gg/XptvsDZwXc" target="_blank" />
       </div>
     </div>
   );

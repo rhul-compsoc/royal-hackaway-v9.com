@@ -18,11 +18,7 @@ export const Sponsors = (): JSX.Element => {
       <H2 text="Meet our Sponsors!" />
       <div className="w-full">
         <div className="mx-auto w-fit mb-16 mt-8">
-          <BigBlink
-            text="Want to sponsor us?"
-            href="mailto:computing@royalholloway.su"
-            target="_blank"
-          />
+          <BigBlink text="Want to sponsor us?" href="mailto:computing@royalholloway.su" target="_blank" />
         </div>
       </div>
       <div>
@@ -34,8 +30,9 @@ export const Sponsors = (): JSX.Element => {
         <div className="flex flex-col items-center text-center">
           <H3 text="Gold"></H3>
           <div
-            className={`grid ${true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
-              } gap-4 lg:gap-8 mx-auto place-content-center`}
+            className={`grid ${
+              true ? 'justify-center' : 'grid-cols-1 lg:grid-cols-3'
+            } gap-4 lg:gap-8 mx-auto place-content-center`}
           >
             <Sponsor
               name="CS Department"
@@ -48,25 +45,21 @@ export const Sponsors = (): JSX.Element => {
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Silver"></H3>
-          <div
-            className={`grid grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8 mx-auto place-content-center`}
-          >
+          <div className={`grid grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8 mx-auto place-content-center`}>
             <Sponsor name="Verdn" img={verdn} alt="Verdn Logo" href="https://verdn.com/" />
-            <Sponsor name="Pilk" img={pilk} alt='Pilk Logo' href="https://pilk.uk/" />
+            <Sponsor name="Pilk" img={pilk} alt="Pilk Logo" href="https://pilk.uk/" />
           </div>
         </div>
 
         <div className="flex flex-col items-center text-center">
           <H3 text="Bronze"></H3>
-          <div
-            className={`grid grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 mx-auto place-content-center`}
-          >
+          <div className={`grid grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 mx-auto place-content-center`}>
             <Sponsor
               name="StoryFutures"
               img={sf}
               alt="Story Futures Logo"
               href="https://www.storyfutures.com/"
-              className='bg-black p-4 scale-[50%]'
+              className="bg-black p-4 scale-[50%]"
             />
           </div>
         </div>
@@ -74,19 +67,9 @@ export const Sponsors = (): JSX.Element => {
         <div className="flex flex-col items-center text-center">
           <H3 text="Supporter"></H3>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-auto place-content-center">
-            <Sponsor
-              name="Red Bull"
-              img={redbull_logo}
-              alt="Red Bull Logo"
-              href="https://www.redbull.com/"
-            />
+            <Sponsor name="Red Bull" img={redbull_logo} alt="Red Bull Logo" href="https://www.redbull.com/" />
             <div className=" scale-[60%]">
-              <Sponsor
-                name="Github"
-                img={github_logo}
-                alt="Github Logo"
-                href="https://github.com/"
-              />
+              <Sponsor name="Github" img={github_logo} alt="Github Logo" href="https://github.com/" />
             </div>
           </div>
         </div>
@@ -94,19 +77,9 @@ export const Sponsors = (): JSX.Element => {
         <div className="flex flex-col items-center text-center">
           <H3 text="Partner"></H3>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-auto">
-            <Sponsor
-              name="RHSU"
-              img={rhsu_logo}
-              alt="RHSU Logo"
-              href="https://www.su.rhul.ac.uk/"
-            />
+            <Sponsor name="RHSU" img={rhsu_logo} alt="RHSU Logo" href="https://www.su.rhul.ac.uk/" />
             <div className="mx-auto">
-              <Sponsor
-                name="RHUL"
-                img={rhul_logo}
-                alt="RHUL Logo"
-                href="https://www.royalholloway.ac.uk/"
-              />
+              <Sponsor name="RHUL" img={rhul_logo} alt="RHUL Logo" href="https://www.royalholloway.ac.uk/" />
             </div>
             <Sponsor
               name="Hackathons UK"

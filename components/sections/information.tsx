@@ -30,18 +30,13 @@ export const Information = (): JSX.Element => {
       </div>
 
       <div className="mt-4 mb-4">
-        <BigDiscordBlink
-          text="Join our Discord!"
-          href="https://discord.gg/XptvsDZwXc"
-          target="_blank"
-        />
+        <BigDiscordBlink text="Join our Discord!" href="https://discord.gg/XptvsDZwXc" target="_blank" />
       </div>
 
       <p className="w-3/4 text-lg tracking-tight lg:w-1/2 lg:text-xl py-10">
-        Royal Hackaway is Royal Holloway&apos;s annual hackathon, open to university students from
-        the UK and around the world! Spend the 24 hours as a team working together on a project,
-        attend any of our workshops, talks or mini-events, and work together to create the coolest
-        project!
+        Royal Hackaway is Royal Holloway&apos;s annual hackathon, open to university students from the UK and around the
+        world! Spend the 24 hours as a team working together on a project, attend any of our workshops, talks or
+        mini-events, and work together to create the coolest project!
       </p>
 
       <p className="mt-2 ml-2 mr-2 mb-2">
@@ -49,11 +44,7 @@ export const Information = (): JSX.Element => {
           <FontAwesomeIcon size="xl" icon={faInstagram} />
         </Link>
 
-        <Link
-          href={'https://maps.app.goo.gl/7neALzxuHu5iQEMw7'}
-          target="_blank"
-          className="mt-2 ml-2"
-        >
+        <Link href={'https://maps.app.goo.gl/7neALzxuHu5iQEMw7'} target="_blank" className="mt-2 ml-2">
           <FontAwesomeIcon size="xl" icon={faMapPin} />
         </Link>
       </p>

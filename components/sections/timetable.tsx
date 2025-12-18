@@ -66,10 +66,7 @@ export const Timetable = (): JSX.Element => {
       time: '16:00',
       title: (
         <>
-          Geogeuessr with{' '}
-          <a style={{ color: 'blue' }}>
-            CyberSoc
-          </a>
+          Geogeuessr with <a style={{ color: 'blue' }}>CyberSoc</a>
         </>
       ),
     },
@@ -79,88 +76,106 @@ export const Timetable = (): JSX.Element => {
     },
     {
       time: '18:00',
-      title: <>
-        Cup Stacking with{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://www.hackathons.org.uk/">
-          HUK
-        </a>
-      </>,
+      title: (
+        <>
+          Cup Stacking with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://www.hackathons.org.uk/">
+            HUK
+          </a>
+        </>
+      ),
     },
     {
       time: '19:00',
-      title: <>
-        Mini-Missions with{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
-          Pilksoft
-        </a>
-      </>,
+      title: (
+        <>
+          Mini-Missions with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
+            Pilksoft
+          </a>
+        </>
+      ),
     },
     {
       time: '20:00',
-      title: <>
-        Taskmaster and Carrot in a Box with{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
-          Pilksoft
-        </a>
-      </>,
+      title: (
+        <>
+          Taskmaster and Carrot in a Box with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
+            Pilksoft
+          </a>
+        </>
+      ),
     },
     {
       time: '21:00',
-      title: <>
-        Mini-Missions with{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
-          Pilksoft
-        </a>
-      </>,
+      title: (
+        <>
+          Mini-Missions with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
+            Pilksoft
+          </a>
+        </>
+      ),
     },
     {
       time: '23:00',
-      title: <>
-        Mini-Missions with{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
-          Pilksoft
-        </a>
-      </>,
+      title: (
+        <>
+          Mini-Missions with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
+            Pilksoft
+          </a>
+        </>
+      ),
     },
   ];
 
   const dayTwo = [
     {
       time: '01:00',
-      title: <>
-        Mini-Missions with{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
-          Pilksoft
-        </a>
-      </>,
+      title: (
+        <>
+          Mini-Missions with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
+            Pilksoft
+          </a>
+        </>
+      ),
     },
     {
       time: '03:00',
-      title: <>
-        Mini-Missions with{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
-          Pilksoft
-        </a>
-      </>,
+      title: (
+        <>
+          Mini-Missions with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
+            Pilksoft
+          </a>
+        </>
+      ),
     },
     {
       time: '05:00',
-      title: <>
-        Mini-Missions with{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
-          Pilksoft
-        </a>
-      </>,
+      title: (
+        <>
+          Mini-Missions with{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://pilk.uk/">
+            Pilksoft
+          </a>
+        </>
+      ),
     },
     { time: '8:00', title: 'Breakfast' },
     {
       time: '11:00',
-      title: <>
-        Deadline for submissions on{' '}
-        <a style={{ color: 'blue' }} target="_blank" href="https://royalhackaway-v8.devpost.com/">
-          Devpost
-        </a>
-      </>,
+      title: (
+        <>
+          Deadline for submissions on{' '}
+          <a style={{ color: 'blue' }} target="_blank" href="https://royalhackaway-v8.devpost.com/">
+            Devpost
+          </a>
+        </>
+      ),
     },
     { time: '12:30', title: '🛑 Hacking ends 🛑' },
     {
@@ -174,17 +189,15 @@ export const Timetable = (): JSX.Element => {
       title: '🎪 Project Fair 🎪',
       description: (
         <>
-          Show off your project in a &quot;Science Fair&quot;-esque like display to all the judges
-          and volunteers that come around!
+          Show off your project in a &quot;Science Fair&quot;-esque like display to all the judges and volunteers that
+          come around!
         </>
       ),
     },
     {
       time: '15:30',
       title: '🧹 Cleanup Time 🗑️',
-      description: (
-        <>Clean up, tidy up, pack up - We&apos;re about to decide who wins Royal Hackaway!</>
-      ),
+      description: <>Clean up, tidy up, pack up - We&apos;re about to decide who wins Royal Hackaway!</>,
     },
     { time: '16:00', title: 'Closing Ceremony' },
     { title: '🏆 Winners announced 🏆' },

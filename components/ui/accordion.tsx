@@ -22,12 +22,7 @@ export const Accordion: React.FC<Props> = ({ elements }): JSX.Element => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <p className="mt-4 px-4 leading-relaxed text-text-black">{element.body}</p>
