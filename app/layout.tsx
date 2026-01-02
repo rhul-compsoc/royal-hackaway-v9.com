@@ -40,7 +40,7 @@ const Root = ({
   children: ReactElement
 }>): ReactElement => {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <body className={`${kollektif.className} antialiased`}>{children}</body>
     </html>
   )
