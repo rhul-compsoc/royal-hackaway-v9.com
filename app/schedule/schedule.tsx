@@ -10,7 +10,7 @@ interface ScheduleProps {
 
 const Schedule = ({ day, events }: ScheduleProps): ReactElement => {
   return (
-    <div className="rounded-lg h-fit border-gray-200 overflow-hidden border mb-8">
+    <div className="rounded-lg h-fit border-gray-200 overflow-hidden border">
       <table className="w-full divide-y-2 divide-gray-200 bg-white text-sm">
         <thead className="ltr:text-left rtl:text-right font-bold">
           <tr>
