@@ -7,13 +7,11 @@ import { Information } from '@/components/sections/information';
 import { Timetable } from '@/components/sections/timetable';
 import { Divider } from '@/components/ui/divider';
 import { Header } from '@/components/sections/header';
-import { MLHBadge } from '@/components/ui/mlh-badge';
 import { Committee } from '@/components/sections/committee';
 
 export default function Home() {
   return (
     <main>
-      <MLHBadge />
       <Header />
 
       <div className="relative w-full h-full bg-white">
