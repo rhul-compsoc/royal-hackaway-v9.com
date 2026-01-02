@@ -2,7 +2,7 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import { ReactElement } from 'react'
+import { ReactElement, ReactNode } from 'react'
 
 const kollektif = localFont({
   src: [
@@ -34,10 +34,10 @@ const metadata: Metadata = {
   description: 'Official website of Royal Hackaway v9!',
 }
 
-const Root = ({
+const RootLayout = ({
   children,
 }: Readonly<{
-  children: ReactElement
+  children: ReactNode
 }>): ReactElement => {
   return (
     <html className="scroll-smooth" lang="en">
@@ -46,6 +46,6 @@ const Root = ({
   )
 }
 
-export default Root
+export default RootLayout
 
 export { metadata }
