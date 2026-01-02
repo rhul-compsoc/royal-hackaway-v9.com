@@ -14,9 +14,10 @@ interface ButtonProps {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: 'bg-primary hover:bg-accent text-white',
-  secondary: 'bg-secondary hover:bg-accent text-white',
-  discord: 'bg-discord hover:bg-discord-accent focus:bg-discord-accent text-white',
+  primary: 'bg-primary hover:bg-accent text-white transition-all duration-200',
+  secondary:
+    'bg-secondary hover:bg-secondary text-primary transition-all duration-200 border-2 border-primary hover:border-accent',
+  discord: 'bg-discord hover:bg-discord-accent focus:bg-discord-accent text-white transition-all duration-200',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -29,7 +30,7 @@ const Button = ({ variant = 'primary', size = 'md', children, className }: Butto
   return (
     <button
       className={cn(
-        'inline-block rounded-2xl text-sm font-medium focus:outline-none shadow-2xl hover:shadow-4xl mt-2 hover:cursor-pointer',
+        'inline-block rounded-2xl text-sm font-medium focus:outline-none shadow-2xl hover:shadow-4xl mt-2 hover:cursor-pointer active:scale-95 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent',
         variantClasses[variant],
         sizeClasses[size],
         className,

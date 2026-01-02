@@ -34,7 +34,7 @@ export const Header = () => {
           />
         </div>
         <div className="w-full blur-none mt-5 sm:mt-10 mb-20 lg:mb-10">
-          <div className="w-fit lg:w-4/5 mx-auto py-5 sm:mt-20 bg-accent rounded-4xl z-50">
+          <div className="w-fit lg:w-4/5 mx-auto py-5 sm:mt-20 bg-accent rounded-4xl">
             <Countdown date={new Date('2026-01-31T09:00:00Z')} />
           </div>
         </div>

@@ -14,7 +14,7 @@ const Home = (): ReactElement => {
       <div>
         <Header />
       </div>
-      <div className="relative w-full h-full bg-white flex flex-col gap-y-4">
+      <div className="relative w-full h-full bg-white flex flex-col gap-y-12 pt-12">
         <Information />
         <FAQ />
         <Timetable />

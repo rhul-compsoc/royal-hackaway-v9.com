@@ -8,6 +8,10 @@
   --accent: #cf4307;
   --discord: #7289da;
   --discord-accent: #4682b4;
+  --neutral: #6b7280;
+  --neutral-light: #e5e7eb;
+  --error: #dc2626;
+  --success: #16a34a;
   --radius: 0.625rem;
 }
 
@@ -19,6 +23,10 @@
   --accent: #d95b17;
   --discord: #7289da;
   --discord-accent: #4682b4;
+  --neutral: #9ca3af;
+  --neutral-light: #374151;
+  --error: #f87171;
+  --success: #86efac;
 }
 
 @theme inline {
@@ -29,6 +37,10 @@
   --color-accent: var(--accent);
   --color-discord: var(--discord);
   --color-discord-accent: var(--discord-accent);
+  --color-neutral: var(--neutral);
+  --color-neutral-light: var(--neutral-light);
+  --color-error: var(--error);
+  --color-success: var(--success);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
