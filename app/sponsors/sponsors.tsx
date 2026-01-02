@@ -49,7 +49,7 @@ export const Sponsors = (): ReactElement => {
         </div>
         <div className="flex flex-col items-center text-center">
           <H3>Partner</H3>
-          <Sponsor img={hackathonsUkLogo} alt="Hackathons UK Logo" href="https://www.hackathons.uk/" />
+          <Sponsor img={hackathonsUkLogo} alt="Hackathons UK Logo" href="https://www.hackathons.org.uk/" />
         </div>
       </div>
     </div>
