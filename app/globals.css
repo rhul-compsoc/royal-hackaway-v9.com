@@ -1,31 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer base {
-  :root {
-    --text-black: #140f00;
-    --text-white: #fffaeb;
-    --background: #fffaeb;
-    --primary: #e86a26;
-    --secondary: #fff5d6;
-    --accent: #cf4307;
-    --discord: #7289da;
-    --discord-accent: #4682b4;
-  }
-  .dark {
-    --text: #fffaeb;
-    --background: #140f00;
-    --primary: #f86c30;
-    --secondary: #291f00;
-    --accent: #d95b17;
-    --discord: #7289da;
-    --discord-accent: #4682b4;
-  }
+:root {
+  --text: #140f00;
+  --background: #fffaeb;
+  --primary: #e86a26;
+  --secondary: #fff5d6;
+  --accent: #cf4307;
+  --discord: #7289da;
+  --discord-accent: #4682b4;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
+.dark {
+  --text: #fffaeb;
+  --background: #140f00;
+  --primary: #f86c30;
+  --secondary: #291f00;
+  --accent: #d95b17;
+  --discord: #7289da;
+  --discord-accent: #4682b4;
+}
+
+@theme inline {
+  --color-text: var(--text);
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-discord: var(--discord);
+  --color-discord-accent: var(--discord-accent);
 }

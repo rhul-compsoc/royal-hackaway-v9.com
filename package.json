@@ -1,36 +1,44 @@
 {
-  "name": "royal-hackaway-v7.com",
+  "name": "royal-hackaway-v9.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "open-build": "opennextjs-cloudflare build",
     "start": "next start",
-    "lint": "next lint",
-    "check": "prettier . --check --cache",
-    "fmt": "prettier . --write"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix .",
+    "fmt": "prettier --check .",
+    "fmt:fix": "prettier --write .",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-regular-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "next": "^14.2.23",
-    "react": "^18",
-    "react-dom": "^18"
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-regular-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.1",
+    "@opennextjs/cloudflare": "^1.14.7",
+    "@tailwindcss/postcss": "^4",
+    "clsx": "^2.1.1",
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^4"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.7",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "postcss": "^8",
-    "prettier": "^3.4.2",
-    "tailwindcss": "^3",
-    "typescript": "^5"
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "3.7.4",
+    "typescript": "^5",
+    "wrangler": "^4.54.0"
   }
 }

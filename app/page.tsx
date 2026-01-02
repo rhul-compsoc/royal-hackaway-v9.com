@@ -1,21 +1,20 @@
-'use client';
+import { ReactElement } from 'react'
 
-import { Footer } from '@/components/sections/footer';
-import { Sponsors } from '@/components/sections/sponsors';
-import { FAQ } from '@/components/sections/faq';
-import { Information } from '@/components/sections/information';
-import { Timetable } from '@/components/sections/timetable';
-import { Divider } from '@/components/ui/divider';
-import { Header } from '@/components/sections/header';
-import { MLHBadge } from '@/components/ui/mlh-badge';
+import { Divider } from './components/divider'
+import { FAQ } from './faq/faq'
+import { Footer } from './footer/footer'
+import { Header } from './header/header'
+import { Information } from './information/information'
+import { Sponsors } from './sponsors/sponsors'
+import { Timetable } from './timetable/timetable'
 
-export default function Home() {
+const Home = (): ReactElement => {
   return (
     <main>
-      <MLHBadge />
-      <Header />
-
-      <div className="relative w-full h-full bg-white">
+      <div>
+        <Header />
+      </div>
+      <div className="relative w-full h-full bg-white flex flex-col gap-y-4">
         <Information />
         <FAQ />
         <Timetable />
@@ -24,5 +23,7 @@ export default function Home() {
         <Footer />
       </div>
     </main>
-  );
+  )
 }
+
+export default Home
