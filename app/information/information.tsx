@@ -39,10 +39,10 @@ const Information = ({}: InformationProps): ReactElement => {
       </p>
       <div className="flex flex-row gap-x-2">
         <Link href="https://www.instagram.com/royalhackaway/" target="_blank" className="transition hover:opacity-75">
-          <FontAwesomeIcon size="xl" icon={faInstagram} />
+          <FontAwesomeIcon size="xl" className="hover:scale-110" icon={faInstagram} />
         </Link>
         <Link href="https://discord.gg/XptvsDZwXc" target="_blank" className="transition hover:opacity-75">
-          <FontAwesomeIcon size="xl" icon={faDiscord} />
+          <FontAwesomeIcon size="xl" className="hover:scale-110" icon={faDiscord} />
         </Link>
       </div>
       <InformationMap />
