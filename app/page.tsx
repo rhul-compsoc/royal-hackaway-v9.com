@@ -17,7 +17,7 @@ const Home = (): ReactElement => {
       <div className="relative w-full h-full bg-white flex flex-col gap-y-12 pt-12">
         <Information />
         <FAQ />
-        <Timetable />
+        <Timetable showSchedule={false} />
         <Sponsors />
         <Divider />
         <Footer />

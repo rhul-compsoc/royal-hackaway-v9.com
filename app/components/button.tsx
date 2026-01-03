@@ -30,7 +30,7 @@ const Button = ({ variant = 'primary', size = 'md', children, className }: Butto
   return (
     <button
       className={cn(
-        'inline-block rounded-2xl text-sm font-medium focus:outline-none shadow-2xl hover:shadow-4xl mt-2 hover:cursor-pointer active:scale-95 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent',
+        'inline-block rounded-2xl text-sm font-medium focus:outline-none shadow-2xl hover:shadow-4xl mt-2 active:scale-95 hover:scale-105 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent',
         variantClasses[variant],
         sizeClasses[size],
         className,

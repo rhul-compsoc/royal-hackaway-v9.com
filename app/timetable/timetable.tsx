@@ -1,9 +1,13 @@
 import { ReactElement } from 'react'
 
-import { H2 } from '../components/typography'
+import { H2, H4 } from '../components/typography'
 import { Schedule } from '../schedule/schedule'
 
-const Timetable = (): ReactElement => {
+interface TimetableProps {
+  showSchedule?: boolean
+}
+
+const Timetable = ({ showSchedule }: TimetableProps): ReactElement => {
   const dayOne = [
     {
       time: '8:30',
@@ -221,10 +225,16 @@ const Timetable = (): ReactElement => {
       id="schedule"
     >
       <H2 className="text-center mb-12">Event Schedule</H2>
-      <div className="overflow-x-auto rounded-lg border-gray-200 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-auto place-content-center">
-        <Schedule day="February 8th - Day 1" events={dayOne} />
-        <Schedule day="February 9th - Day 2" events={dayTwo} />
-      </div>
+      {showSchedule === false ? (
+        <div className="text-center">
+          <H4>Schedule coming soon...</H4>
+        </div>
+      ) : (
+        <div className="overflow-x-auto rounded-lg border-gray-200 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-auto place-content-center">
+          <Schedule day="February 8th - Day 1" events={dayOne} />
+          <Schedule day="February 9th - Day 2" events={dayTwo} />
+        </div>
+      )}
     </div>
   )
 }

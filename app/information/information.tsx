@@ -28,11 +28,9 @@ const Information = ({}: InformationProps): ReactElement => {
         </p>
       </div>
       <div className="">
-        <Button>
-          <Link href="https://royalhackaway-v8.devpost.com/project-gallery" target="_blank">
-            Check out last years projects on Devpost!
-          </Link>
-        </Button>
+        <Link href="https://royalhackaway-v8.devpost.com/project-gallery" target="_blank">
+          <Button className="hover:cursor-pointer ">Check out last years projects on Devpost!</Button>
+        </Link>
       </div>
       <p className="w-3/4 text-lg tracking-tight lg:w-1/2 lg:text-xl">
         Royal Hackaway is Royal Holloway&apos;s annual hackathon, open to university students from the UK and around the

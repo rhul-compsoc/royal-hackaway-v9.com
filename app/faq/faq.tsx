@@ -72,12 +72,12 @@ const FAQ = (): ReactElement => {
       />
       <div className="pt-10">
         <H3 className="text-center mb-2">Got another question?</H3>
-        <Button variant="discord" size="lg">
-          <Link href="https://discord.gg/XptvsDZwXc" target="_blank">
+        <Link href="https://discord.gg/XptvsDZwXc" target="_blank">
+          <Button className="hover:cursor-pointer" variant="discord" size="lg">
             <FontAwesomeIcon icon={faDiscord} className="mr-2" />
             Join our Discord!
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
     </div>
   )

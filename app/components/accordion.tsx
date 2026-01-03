@@ -15,7 +15,10 @@ const Accordion = ({ elements }: AccordionProps): ReactElement => {
       {isNonEmptyArray(elements) &&
         elements.map((element, index) => (
           <details key={index} className="group [&_summary::-webkit-details-marker]:hidden">
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-2xl bg-primary hover:bg-accent outline-none shadow-xl hover:shadow-4xl p-4 text-white transition-all duration-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent">
+            <summary
+              className="flex cursor-pointer items-center justify-between gap-1.5 rounded-2xl bg-primary hover:bg-accent outline-none shadow-xl hover:shadow-4xl p-4 text-white transition-all duration-200 hover:scale-105 active:scale-95
+            focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent"
+            >
               <h2 className="font-medium">{element.title}</h2>
               <svg
                 className="h-5 w-5 shrink-0 transition-transform duration-300 ease-out group-open:-rotate-180"

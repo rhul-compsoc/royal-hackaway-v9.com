@@ -15,11 +15,9 @@ export const Sponsors = (): ReactElement => {
       <H2 className="text-center mb-4">Meet our Sponsors!</H2>
       <div className="w-full mb-4">
         <div className="mx-auto w-fit">
-          <Button>
-            <Link href="mailto:computing@royalholloway.su" target="_blank">
-              Want to sponsor us?
-            </Link>
-          </Button>
+          <Link href="mailto:computing@royalholloway.su" target="_blank">
+            <Button className="hover:cursor-pointer">Want to sponsor us?</Button>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col gap-y-8">
