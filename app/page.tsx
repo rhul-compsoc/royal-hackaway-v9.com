@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
 
+import { Committee } from './committee/committee'
 import { Divider } from './components/divider'
 import { FAQ } from './faq/faq'
 import { Footer } from './footer/footer'
@@ -19,6 +20,7 @@ const Home = (): ReactElement => {
         <FAQ />
         <Timetable showSchedule={false} />
         <Sponsors />
+        <Committee />
         <Divider />
         <Footer />
       </div>
