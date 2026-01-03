@@ -42,7 +42,7 @@ export const Header = () => {
           <div className="mx-auto w-fit">
             <Link href="/#info">
               <FontAwesomeIcon
-                className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite]"
+                className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite] hover:scale-110 transition-transform"
                 size="5x"
                 color="white"
                 icon={faChevronDown}
