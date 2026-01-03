@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { ReactElement } from 'react'
 
 import { Button } from '../components/button'
-import { H2 } from '../components/typography'
+import { H2, H4 } from '../components/typography'
 import { InformationMap } from './information-map'
 
 interface InformationProps {
@@ -18,21 +18,21 @@ const Information = ({}: InformationProps): ReactElement => {
     <div className="relative flex flex-col min-h-[50%] items-center gap-y-4" id="info">
       <H2 className="">Coming soon: Royal Hackaway v9...</H2>
       <div>
-        <p className="text-center">
+        <H4 className="text-center">
           <FontAwesomeIcon icon={faCalendar} />
-          Saturday 1st of January - Sunday 1th of February 2026
-        </p>
-        <p className="text-center">
+          Saturday 31st of January - Sunday 1st of February 2026
+        </H4>
+        <H4 className="text-center">
           <FontAwesomeIcon icon={faMap} />
           Windsor Building, Royal Holloway, University of London
-        </p>
+        </H4>
       </div>
       <div className="">
         <Link href="https://royalhackaway-v8.devpost.com/project-gallery" target="_blank">
           <Button className="hover:cursor-pointer ">Check out last years projects on Devpost!</Button>
         </Link>
       </div>
-      <p className="w-3/4 text-lg tracking-tight lg:w-1/2 lg:text-xl">
+      <p className="w-3/5 leading-relaxed text-black">
         Royal Hackaway is Royal Holloway&apos;s annual hackathon, open to university students from the UK and around the
         world! Spend the 24 hours as a team working together on a project, attend any of our workshops, talks or
         mini-events, and work together to create the coolest project!
