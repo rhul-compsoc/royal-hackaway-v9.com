@@ -1,21 +1,23 @@
 import Image, { StaticImageData } from 'next/image'
 import { ReactElement } from 'react'
 
+import placeholder from '@/public/committee/blank.webp'
+
 import { H3, H4 } from './typography'
 
 interface CardProps {
   text: string
   subtext: string
-  img: StaticImageData
+  image?: StaticImageData
   alt: string
 }
 
-const Card = ({ text, subtext, img, alt }: CardProps): ReactElement => {
+const Card = ({ text, subtext, image, alt }: CardProps): ReactElement => {
   return (
     <article className="overflow-hidden rounded-4xl shadow-2xl transition-all duration-300 hover:shadow-4xl hover:-translate-y-1 hover:scale-105">
       <Image
         alt={alt}
-        src={img}
+        src={image ?? placeholder}
         placeholder="blur"
         className="h-56 w-full object-cover transition-transform duration-300 hover:scale-110"
       />
