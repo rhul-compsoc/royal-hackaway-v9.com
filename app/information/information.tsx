@@ -17,21 +17,17 @@ const Information = ({}: InformationProps): ReactElement => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center gap-y-4" id="info">
       <H2 className="">Coming soon: Royal Hackaway v9...</H2>
-      <div>
-        <H4 className="text-center">
-          <FontAwesomeIcon icon={faCalendar} />
-          Saturday 31st of January - Sunday 1st of February 2026
-        </H4>
-        <H4 className="text-center">
-          <FontAwesomeIcon icon={faMap} />
-          Windsor Building, Royal Holloway, University of London
-        </H4>
-      </div>
-      <div className="">
-        <Link href="https://royalhackaway-v8.devpost.com/project-gallery" target="_blank">
-          <Button className="hover:cursor-pointer ">Check out last years projects on Devpost!</Button>
-        </Link>
-      </div>
+      <H4 className="text-center">
+        <FontAwesomeIcon icon={faCalendar} />
+        Saturday 31st of January - Sunday 1st of February 2026
+      </H4>
+      <H4 className="text-center">
+        <FontAwesomeIcon icon={faMap} />
+        Windsor Building, Royal Holloway, University of London
+      </H4>
+      <Link href="https://royalhackaway-v8.devpost.com/project-gallery" target="_blank">
+        <Button className="hover:cursor-pointer ">Check out last years projects on Devpost!</Button>
+      </Link>
       <p className="w-3/5 leading-relaxed text-black">
         Royal Hackaway is Royal Holloway&apos;s annual hackathon, open to university students from the UK and around the
         world! Spend the 24 hours as a team working together on a project, attend any of our workshops, talks or
