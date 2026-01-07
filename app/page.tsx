@@ -9,7 +9,7 @@ import { Information } from './information/information'
 import { Sponsors } from './sponsors/sponsors'
 import { Timetable } from './timetable/timetable'
 
-const Home = (): ReactElement => {
+const Page = (): ReactElement => {
   return (
     <main>
       <div>
@@ -28,4 +28,4 @@ const Home = (): ReactElement => {
   )
 }
 
-export default Home
+export default Page
