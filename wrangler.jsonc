@@ -16,4 +16,7 @@
       "persist": true,
     },
   },
+  "vars": {
+    "TICKETS_REDIRECT_URL": "https://pretix.eu/royalhackaway/v9",
+  },
 }
