@@ -9,8 +9,10 @@ import pureButtonsLogo from '@/public/sponsors/pure-buttons-logo.svg'
 import rhulComputerScienceLogo from '@/public/sponsors/rhul-computer-science-logo.gif'
 
 import { Button } from '../components/button'
-import { H2, H3, H4 } from '../components/typography'
+import { H2 } from '../components/typography'
 import { Sponsor } from './sponsor'
+import { SponsorGroup } from './sponsor-group'
+import { SponsorTitle } from './sponsor-title'
 
 export const Sponsors = (): ReactElement => {
   return (
@@ -23,39 +25,41 @@ export const Sponsors = (): ReactElement => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-y-8">
         <div className="flex flex-col items-center text-center">
-          <H3>Platinum</H3>
-          <H4>Nothing yet, could you be the first?</H4>
+          <SponsorTitle>Platinum</SponsorTitle>
+          <SponsorGroup />
         </div>
         <div className="flex flex-col items-center text-center">
-          <H3>Gold</H3>
-          <Sponsor
-            img={rhulComputerScienceLogo}
-            tier="gold"
-            alt="Royal Holloway Computer Science Logo"
-            href="https://www.rhul.ac.uk/computer-science/"
-          />
+          <SponsorTitle>Gold</SponsorTitle>
+          <SponsorGroup>
+            <Sponsor
+              img={rhulComputerScienceLogo}
+              tier="gold"
+              alt="Royal Holloway Computer Science Logo"
+              href="https://www.rhul.ac.uk/computer-science/"
+            />
+          </SponsorGroup>
         </div>
         <div className="flex flex-col items-center text-center">
-          <H3>Silver</H3>
-          <H4>Nothing yet, could you be the first?</H4>
+          <SponsorTitle>Silver</SponsorTitle>
+          <SponsorGroup />
         </div>
         <div className="flex flex-col items-center text-center">
-          <H3>Bronze</H3>
-          <H4>Nothing yet, could you be the first?</H4>
+          <SponsorTitle>Bronze</SponsorTitle>
+          <SponsorGroup />
         </div>
         <div className="flex flex-col items-center text-center">
-          <H3>Supporter</H3>
-          <div className="flex flex-row gap-x-8">
+          <SponsorTitle>Supporter</SponsorTitle>
+          <SponsorGroup>
             <Sponsor img={keyboardCoLogo} tier="supporter" alt="Keyboard Co Logo" href="https://www.keyboardco.com/" />
             <Sponsor img={githubLogo} tier="supporter" alt="GitHub Logo" href="https://github.com/" />
             <Sponsor img={pureButtonsLogo} tier="supporter" alt="Pure Buttons Logo" href="https://purebuttons.com/" />
-          </div>
+          </SponsorGroup>
         </div>
         <div className="flex flex-col items-center text-center">
-          <H3>Partner</H3>
-          <div className="flex flex-row gap-x-8">
+          <SponsorTitle>Partner</SponsorTitle>
+          <SponsorGroup>
             <Sponsor
               img={hackathonsUkLogo}
               tier="partner"
@@ -63,7 +67,7 @@ export const Sponsors = (): ReactElement => {
               href="https://www.hackathons.org.uk/"
             />
             <Sponsor img={mlhLogo} tier="partner" alt="MLH Logo" href="https://mlh.io/" />
-          </div>
+          </SponsorGroup>
         </div>
       </div>
     </div>

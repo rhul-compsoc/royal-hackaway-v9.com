@@ -40,7 +40,7 @@ const Sponsor = ({ img, alt, href, className, tier, size = 'md' }: SponsorProps)
   return (
     <div className={cn('inline-block', className)}>
       {isDefined(tier) ? (
-        <div className={cn('bg-linear-to-r p-2 rounded-xl', tierGradients[tier])}>{content}</div>
+        <div className={cn('bg-linear-to-r p-2 rounded-xl shadow-2xl', tierGradients[tier])}>{content}</div>
       ) : (
         content
       )}
