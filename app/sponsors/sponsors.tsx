@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import { ReactElement } from 'react'
 
+import githubLogo from '@/public/sponsors/github-logo.svg'
 import hackathonsUkLogo from '@/public/sponsors/hackathons-uk-logo.png'
 import keyboardCoLogo from '@/public/sponsors/keyboard-co-logo.png'
+import mlhLogo from '@/public/sponsors/mlh-logo.svg'
+import pureButtonsLogo from '@/public/sponsors/pure-buttons-logo.svg'
 import rhulComputerScienceLogo from '@/public/sponsors/rhul-computer-science-logo.gif'
 
 import { Button } from '../components/button'
@@ -20,7 +23,7 @@ export const Sponsors = (): ReactElement => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-y-8">
+      <div className="flex flex-col">
         <div className="flex flex-col items-center text-center">
           <H3>Platinum</H3>
           <H4>Nothing yet, could you be the first?</H4>
@@ -29,6 +32,7 @@ export const Sponsors = (): ReactElement => {
           <H3>Gold</H3>
           <Sponsor
             img={rhulComputerScienceLogo}
+            tier="gold"
             alt="Royal Holloway Computer Science Logo"
             href="https://www.rhul.ac.uk/computer-science/"
           />
@@ -43,11 +47,23 @@ export const Sponsors = (): ReactElement => {
         </div>
         <div className="flex flex-col items-center text-center">
           <H3>Supporter</H3>
-          <Sponsor img={keyboardCoLogo} alt="Keyboard Co Logo" href="https://www.keyboardco.com/" />
+          <div className="flex flex-row gap-x-8">
+            <Sponsor img={keyboardCoLogo} tier="supporter" alt="Keyboard Co Logo" href="https://www.keyboardco.com/" />
+            <Sponsor img={githubLogo} tier="supporter" alt="GitHub Logo" href="https://github.com/" />
+            <Sponsor img={pureButtonsLogo} tier="supporter" alt="Pure Buttons Logo" href="https://purebuttons.com/" />
+          </div>
         </div>
         <div className="flex flex-col items-center text-center">
           <H3>Partner</H3>
-          <Sponsor img={hackathonsUkLogo} alt="Hackathons UK Logo" href="https://www.hackathons.org.uk/" />
+          <div className="flex flex-row gap-x-8">
+            <Sponsor
+              img={hackathonsUkLogo}
+              tier="partner"
+              alt="Hackathons UK Logo"
+              href="https://www.hackathons.org.uk/"
+            />
+            <Sponsor img={mlhLogo} tier="partner" alt="MLH Logo" href="https://mlh.io/" />
+          </div>
         </div>
       </div>
     </div>
