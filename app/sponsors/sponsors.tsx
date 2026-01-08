@@ -8,6 +8,7 @@ import { KeyboardCo } from './companies/keyboardco'
 import { MLH } from './companies/mlh'
 import { PureButtons } from './companies/pure-buttons'
 import { RHULComputerScience } from './companies/rhul-computer-science'
+import { SponsorGrid } from './sponsor-grid'
 import { SponsorGroup } from './sponsor-group'
 import { SponsorTitle } from './sponsor-title'
 
@@ -23,38 +24,38 @@ export const Sponsors = (): ReactElement => {
         </div>
       </div>
       <div className="flex flex-col gap-y-8">
-        <div className="flex flex-col items-center text-center">
+        <SponsorGroup>
           <SponsorTitle>Platinum</SponsorTitle>
-          <SponsorGroup />
-        </div>
-        <div className="flex flex-col items-center text-center">
+          <SponsorGrid />
+        </SponsorGroup>
+        <SponsorGroup>
           <SponsorTitle>Gold</SponsorTitle>
-          <SponsorGroup>
+          <SponsorGrid>
             <RHULComputerScience />
-          </SponsorGroup>
-        </div>
-        <div className="flex flex-col items-center text-center">
+          </SponsorGrid>
+        </SponsorGroup>
+        <SponsorGroup>
           <SponsorTitle>Silver</SponsorTitle>
-          <SponsorGroup />
-        </div>
-        <div className="flex flex-col items-center text-center">
+          <SponsorGrid />
+        </SponsorGroup>
+        <SponsorGroup>
           <SponsorTitle>Bronze</SponsorTitle>
-          <SponsorGroup />
-        </div>
-        <div className="flex flex-col items-center text-center">
+          <SponsorGrid />
+        </SponsorGroup>
+        <SponsorGroup>
           <SponsorTitle>Supporter</SponsorTitle>
-          <SponsorGroup>
+          <SponsorGrid>
             <KeyboardCo />
             <PureButtons />
-          </SponsorGroup>
-        </div>
-        <div className="flex flex-col items-center text-center">
+          </SponsorGrid>
+        </SponsorGroup>
+        <SponsorGroup>
           <SponsorTitle>Partner</SponsorTitle>
-          <SponsorGroup>
+          <SponsorGrid>
             <HackathonsUK />
             <MLH />
-          </SponsorGroup>
-        </div>
+          </SponsorGrid>
+        </SponsorGroup>
       </div>
     </div>
   )

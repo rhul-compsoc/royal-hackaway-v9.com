@@ -1,16 +1,11 @@
-import { ReactElement, ReactNode } from 'react'
-
-import { H4 } from '../components/typography'
-import { isDefined } from '../utils/is-defined'
+import { ReactNode } from 'react'
 
 interface SponsorGroupProps {
   children?: ReactNode
 }
 
-const SponsorGroup = ({ children }: SponsorGroupProps): ReactElement => (
-  <div className="flex flex-row gap-x-8 mt-4">
-    {isDefined(children) ? children : <H4>Nothing yet, could you be the first?</H4>}
-  </div>
+const SponsorGroup = ({ children }: SponsorGroupProps) => (
+  <div className="flex flex-col items-center text-center">{children}</div>
 )
 
 export type { SponsorGroupProps }
