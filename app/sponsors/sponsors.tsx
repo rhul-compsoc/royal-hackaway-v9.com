@@ -1,16 +1,13 @@
 import Link from 'next/link'
 import { ReactElement } from 'react'
 
-import githubLogo from '@/public/sponsors/github-logo.svg'
-import hackathonsUkLogo from '@/public/sponsors/hackathons-uk-logo.png'
-import keyboardCoLogo from '@/public/sponsors/keyboard-co-logo.png'
-import mlhLogo from '@/public/sponsors/mlh-logo.svg'
-import pureButtonsLogo from '@/public/sponsors/pure-buttons-logo.svg'
-import rhulComputerScienceLogo from '@/public/sponsors/rhul-computer-science-logo.gif'
-
 import { Button } from '../components/button'
 import { H2 } from '../components/typography'
-import { Sponsor } from './sponsor'
+import { HackathonsUK } from './companies/hackathons-uk'
+import { KeyboardCo } from './companies/keyboardco'
+import { MLH } from './companies/mlh'
+import { PureButtons } from './companies/pure-buttons'
+import { RHULComputerScience } from './companies/rhul-computer-science'
 import { SponsorGroup } from './sponsor-group'
 import { SponsorTitle } from './sponsor-title'
 
@@ -33,12 +30,7 @@ export const Sponsors = (): ReactElement => {
         <div className="flex flex-col items-center text-center">
           <SponsorTitle>Gold</SponsorTitle>
           <SponsorGroup>
-            <Sponsor
-              img={rhulComputerScienceLogo}
-              tier="gold"
-              alt="Royal Holloway Computer Science Logo"
-              href="https://www.rhul.ac.uk/computer-science/"
-            />
+            <RHULComputerScience />
           </SponsorGroup>
         </div>
         <div className="flex flex-col items-center text-center">
@@ -52,21 +44,15 @@ export const Sponsors = (): ReactElement => {
         <div className="flex flex-col items-center text-center">
           <SponsorTitle>Supporter</SponsorTitle>
           <SponsorGroup>
-            <Sponsor img={keyboardCoLogo} tier="supporter" alt="Keyboard Co Logo" href="https://www.keyboardco.com/" />
-            <Sponsor img={githubLogo} tier="supporter" alt="GitHub Logo" href="https://github.com/" />
-            <Sponsor img={pureButtonsLogo} tier="supporter" alt="Pure Buttons Logo" href="https://purebuttons.com/" />
+            <KeyboardCo />
+            <PureButtons />
           </SponsorGroup>
         </div>
         <div className="flex flex-col items-center text-center">
           <SponsorTitle>Partner</SponsorTitle>
           <SponsorGroup>
-            <Sponsor
-              img={hackathonsUkLogo}
-              tier="partner"
-              alt="Hackathons UK Logo"
-              href="https://www.hackathons.org.uk/"
-            />
-            <Sponsor img={mlhLogo} tier="partner" alt="MLH Logo" href="https://mlh.io/" />
+            <HackathonsUK />
+            <MLH />
           </SponsorGroup>
         </div>
       </div>
