@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
 import { H2, H4 } from '../components/typography'
-import { Schedule } from '../schedule/schedule'
+import { Schedule } from '../components/schedule'
 
 interface TimetableProps {
   showSchedule?: boolean
