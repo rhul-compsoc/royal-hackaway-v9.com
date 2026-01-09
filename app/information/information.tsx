@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { ReactElement } from 'react'
 
 import { H2, H4 } from '../components/typography'
+import { information } from '../data/information'
 import { InformationMap } from './information-map'
 import { TicketsButton } from './tickets-button'
 
@@ -26,11 +27,7 @@ const Information = ({}: InformationProps): ReactElement => {
         Windsor Building, Royal Holloway, University of London
       </H4>
       <TicketsButton />
-      <p className="w-3/5 leading-relaxed text-black">
-        Royal Hackaway is Royal Holloway&apos;s annual hackathon, open to university students from the UK and around the
-        world! Spend the 24 hours as a team working together on a project, attend any of our workshops, talks or
-        mini-events, and work together to create the coolest project!
-      </p>
+      <p className="w-3/5 leading-relaxed text-black">{information}</p>
       <div className="flex flex-row gap-x-2">
         <Link href="https://www.instagram.com/royalhackaway/" target="_blank" className="transition hover:opacity-75">
           <FontAwesomeIcon size="xl" className="hover:scale-110" icon={faInstagram} />
