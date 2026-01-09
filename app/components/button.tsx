@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from 'react'
+import { ComponentProps, ReactElement, ReactNode } from 'react'
 
 import { cn } from '../utils/cn'
 
@@ -26,7 +26,13 @@ const sizeClasses: Record<ButtonSize, string> = {
   lg: 'px-24 py-6 text-xl',
 }
 
-const Button = ({ variant = 'primary', size = 'md', children, className }: ButtonProps): ReactElement => {
+const Button = ({
+  variant = 'primary',
+  size = 'md',
+  children,
+  className,
+  ...props
+}: ButtonProps & ComponentProps<'button'>): ReactElement => {
   return (
     <button
       className={cn(
@@ -35,6 +41,7 @@ const Button = ({ variant = 'primary', size = 'md', children, className }: Butto
         sizeClasses[size],
         className,
       )}
+      {...props}
     >
       {children}
     </button>
