@@ -1,16 +1,16 @@
-import { ReactElement } from 'react'
+import { ComponentProps, ReactElement } from 'react'
 
 import { cn } from '../utils/cn'
 
-const H2 = ({ className, ...props }: React.ComponentProps<'h2'>): ReactElement => {
+const H2 = ({ className, ...props }: ComponentProps<'h2'>): ReactElement => {
   return <h2 className={cn('mt-0.5 font-extrabold text-4xl lg:text-5xl text-text', className)} {...props} />
 }
 
-const H3 = ({ className, ...props }: React.ComponentProps<'h3'>): ReactElement => {
+const H3 = ({ className, ...props }: ComponentProps<'h3'>): ReactElement => {
   return <h3 className={cn('mt-0.5 font-extrabold text-2xl lg:text-3xl text-text', className)} {...props} />
 }
 
-const H4 = ({ className, ...props }: React.ComponentProps<'h4'>): ReactElement => {
+const H4 = ({ className, ...props }: ComponentProps<'h4'>): ReactElement => {
   return <h4 className={cn('mt-0.5 text-lg font-light text-neutral', className)} {...props} />
 }
 
