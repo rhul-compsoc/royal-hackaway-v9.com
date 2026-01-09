@@ -2,6 +2,7 @@
 
 import { ReactElement, useEffect, useState } from 'react'
 
+import { CountdownValue } from './countdown-value'
 import { getDays } from './get-days'
 import { getHours } from './get-hours'
 import { getMinutes } from './get-minutes'
@@ -38,22 +39,10 @@ const Countdown = ({ date }: CountdownProps): ReactElement => {
 
   return (
     <div className="w-full lg:grid lg:grid-cols-4 px-5 lg:px-0">
-      <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white font-bold">{days}</p>
-        <p className="text-xl sm:text-2xl md:text-4xl text-white">days</p>
-      </div>
-      <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white font-bold">{hours}</p>
-        <p className="text-xl sm:text-2xl md:text-4xl text-white">hours</p>
-      </div>
-      <div className="text-center mb-5 lg:mb-0">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white font-bold">{minutes}</p>
-        <p className="text-xl sm:text-2xl md:text-4xl text-white">minutes</p>
-      </div>
-      <div className="text-center">
-        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white font-bold">{seconds}</p>
-        <p className="text-xl sm:text-2xl md:text-4xl text-white">seconds</p>
-      </div>
+      <CountdownValue label="days" value={days} />
+      <CountdownValue label="hours" value={hours} />
+      <CountdownValue label="minutes" value={minutes} />
+      <CountdownValue label="seconds" value={seconds} />
     </div>
   )
 }
