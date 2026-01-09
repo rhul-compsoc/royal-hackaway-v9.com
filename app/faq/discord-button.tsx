@@ -6,7 +6,7 @@ import { ReactElement } from 'react'
 import { Button } from '../components/button'
 
 const DiscordButton = (): ReactElement => (
-  <Link href="https://discord.gg/XptvsDZwXc" target="_blank">
+  <Link href="/discord" target="_blank">
     <Button className="hover:cursor-pointer" variant="discord" size="lg">
       <FontAwesomeIcon icon={faDiscord} className="mr-2" />
       Join our Discord!
