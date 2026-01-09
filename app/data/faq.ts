@@ -1,6 +1,4 @@
-import { AccordionItemProps } from '../components/accordion'
-
-const faqs: AccordionItemProps[] = [
+const faqs = [
   {
     title: 'What is a Hackathon?',
     body: `Hackathons are programming competitions where people work in teams to make a project over a 24 hour event. The overall winner will be the 'coolest project', but keep an eye out for sub-categories your team could compete in too, or just make a project for fun!`,

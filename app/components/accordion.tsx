@@ -1,13 +1,13 @@
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { ReactElement, ReactNode } from 'react'
+import { ComponentType, ReactElement } from 'react'
 
 import { isNonEmptyArray } from '../utils/is-non-empty-array'
 import { H4 } from './typography'
 
 interface AccordionItemProps {
   title: string
-  body: ReactNode
+  content: ComponentType
 }
 
 interface AccordionProps {
@@ -31,7 +31,9 @@ const Accordion = ({ elements }: AccordionProps): ReactElement => {
               />
             </summary>
             <div className="overflow-hidden transition-all duration-300 ease-out group-open:duration-300">
-              <p className="mt-4 px-4 pb-4 leading-relaxed text-black">{element.body}</p>
+              <div className="mt-4 px-4 pb-4">
+                <element.content />
+              </div>
             </div>
           </details>
         ))}
