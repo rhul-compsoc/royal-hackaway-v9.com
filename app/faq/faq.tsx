@@ -68,9 +68,13 @@ const FAQ = (): ReactElement => {
             body: `All code is owned by you and your team members!
             We recommend putting your project on GitHub, and making it open source.`,
           },
+          {
+            title: 'Can I use AI?',
+            body: 'The use of AI is allowed, but we encourage people to try and learn new things and not rely entirely on AI tools to build their projects!',
+          },
         ]}
       />
-      <div className="pt-10">
+      <div className="pt-8">
         <H3 className="text-center mb-2">Got another question?</H3>
         <Link href="https://discord.gg/XptvsDZwXc" target="_blank">
           <Button className="hover:cursor-pointer" variant="discord" size="lg">
