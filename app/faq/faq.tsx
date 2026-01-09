@@ -1,11 +1,8 @@
-import { faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
 import { ReactElement } from 'react'
 
 import { Accordion } from '../components/accordion'
-import { Button } from '../components/button'
 import { H2, H3 } from '../components/typography'
+import { DiscordButton } from './discord-button'
 
 const FAQ = (): ReactElement => {
   return (
@@ -76,12 +73,7 @@ const FAQ = (): ReactElement => {
       />
       <div className="pt-8">
         <H3 className="text-center mb-2">Got another question?</H3>
-        <Link href="https://discord.gg/XptvsDZwXc" target="_blank">
-          <Button className="hover:cursor-pointer" variant="discord" size="lg">
-            <FontAwesomeIcon icon={faDiscord} className="mr-2" />
-            Join our Discord!
-          </Button>
-        </Link>
+        <DiscordButton />
       </div>
     </div>
   )
