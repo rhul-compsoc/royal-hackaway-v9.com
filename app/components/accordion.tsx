@@ -39,6 +39,6 @@ const Accordion = ({ elements }: AccordionProps): ReactElement => {
   )
 }
 
-export type { AccordionItemProps,AccordionProps }
+export type { AccordionItemProps, AccordionProps }
 
 export { Accordion }
