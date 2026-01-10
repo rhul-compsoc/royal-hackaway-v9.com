@@ -1,3 +1,5 @@
+'use server'
+
 import { ReactElement } from 'react'
 
 import { Accordion } from '../components/accordion'
