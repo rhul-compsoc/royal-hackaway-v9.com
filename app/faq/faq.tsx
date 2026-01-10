@@ -7,8 +7,8 @@ import { H2, H3 } from '../components/typography'
 import { DiscordButton } from './discord-button'
 import { getFAQs } from './get-faqs'
 
-const FAQ = async (): Promise<ReactElement> => {
-  const faqs = await getFAQs()
+const FAQ = (): ReactElement => {
+  const faqs = getFAQs()
 
   return (
     <div className="relative flex flex-col min-h-[50%] items-center" id="faq">

@@ -7,8 +7,8 @@ import { H2 } from '../components/typography'
 import { isNonEmptyArray } from '../utils/is-non-empty-array'
 import { getCommittee } from './get-committee'
 
-const Committee = async (): Promise<ReactElement> => {
-  const committee = await getCommittee()
+const Committee = (): ReactElement => {
+  const committee = getCommittee()
 
   return (
     <div className="relative flex flex-col min-h-[50%] items-center py-24" id="team">

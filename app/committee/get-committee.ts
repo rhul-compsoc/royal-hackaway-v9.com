@@ -1,23 +1,22 @@
-import fs from 'fs'
-import path from 'path'
+import { ComponentType } from 'react'
 
 import { type Committee, committee } from './types'
 
-const getCommittee = async (): Promise<Committee[]> => {
-  const committeeDirectory = path.join(process.cwd(), 'content/committee')
+// Webpack's require.context runs at BUILD TIME, not runtime
+// This bundles all .mdx files from the directory into the output
+const committeeContext = require.context('@/content/committee', false, /\.mdx$/)
 
-  const slugs = fs.readdirSync(committeeDirectory).filter((file) => file.endsWith('.mdx'))
-
-  const committeeData = await Promise.all(
-    slugs.map(async (slug) => {
-      const mod = await import(`@/content/committee/${slug}`)
-
-      return {
-        ...mod.metadata,
-        content: mod.default,
-      }
-    }),
-  )
+const getCommittee = (): Committee[] => {
+  const committeeData = committeeContext.keys().map((key) => {
+    const mod = committeeContext(key) as unknown as {
+      metadata: Omit<Committee, 'content'>
+      default?: ComponentType
+    }
+    return {
+      ...mod.metadata,
+      content: mod.default,
+    }
+  })
 
   return committeeData.map((data) => committee.parse(data)).sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }
