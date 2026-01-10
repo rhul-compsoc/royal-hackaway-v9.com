@@ -42,7 +42,7 @@ jobs:
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const previewUrl = `https://royal-hackaway-v9-preview-${prNumber}.workers.dev`;
+            const previewUrl = `https://royal-hackaway-v9-preview-${prNumber}.computingsociety.workers.dev`;
 
             const { data: comments } = await github.rest.issues.listComments({
               owner: context.repo.owner,
