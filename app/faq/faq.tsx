@@ -3,10 +3,10 @@ import { ReactElement } from 'react'
 import { Accordion } from '../components/accordion'
 import { H2, H3 } from '../components/typography'
 import { DiscordButton } from './discord-button'
-import { getFaqs } from './get-faqs'
+import { getFAQs } from './get-faqs'
 
-const FAQ = (): ReactElement => {
-  const faqs = getFaqs()
+const FAQ = async (): Promise<ReactElement> => {
+  const faqs = await getFAQs()
 
   return (
     <div className="relative flex flex-col min-h-[50%] items-center" id="faq">
