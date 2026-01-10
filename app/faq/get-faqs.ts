@@ -1,5 +1,5 @@
-import WhatIsAHackathon, { metadata as whatIsAHackathon } from '@/markdown/faq/what-is-a-hackathon.mdx'
-import WhoCanAttend, { metadata as whoCanAttend } from '@/markdown/faq/who-can-attend.mdx'
+import WhatIsAHackathon, { metadata as whatIsAHackathon } from '@/content/faq/what-is-a-hackathon.mdx'
+import WhoCanAttend, { metadata as whoCanAttend } from '@/content/faq/who-can-attend.mdx'
 
 import { FAQ, faq } from './types'
 
