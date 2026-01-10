@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-import { FAQ, faq } from './types'
+import { type FAQ, faq } from './types'
 
 const getFAQs = async (): Promise<FAQ[]> => {
   const faqDirectory = path.join(process.cwd(), 'content/faq')
