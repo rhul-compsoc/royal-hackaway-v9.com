@@ -1,5 +1,7 @@
 import { ReactElement } from 'react'
 
+import { metadata } from '@/content/timetable/index.mdx'
+
 import { Schedule } from '../ui/schedule'
 import { H2, H4 } from '../ui/typography'
 
@@ -224,7 +226,7 @@ const Timetable = ({ showSchedule }: TimetableProps): ReactElement => {
       className="relative w-full sm:w-3/4 md:w-2/3 mx-auto mt-20 mb-12 flex-col items-center min-h-[50%] justify-between"
       id="schedule"
     >
-      <H2 className="text-center mb-12">Event Schedule</H2>
+      <H2 className="text-center mb-12">{metadata.title}</H2>
       {showSchedule === false ? (
         <div className="text-center">
           <H4>Schedule coming soon...</H4>
