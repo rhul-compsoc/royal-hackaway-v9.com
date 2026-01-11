@@ -1,10 +1,9 @@
-'use server'
-
 import { ReactElement } from 'react'
 
-import { Card } from '../components/card'
-import { H2 } from '../components/typography'
-import { isNonEmptyArray } from '../utils/is-non-empty-array'
+import { isNonEmptyArray } from '@/lib/is/is-non-empty-array'
+
+import { Card } from '../ui/card'
+import { H2 } from '../ui/typography'
 import { getCommittee } from './get-committee'
 
 const Committee = (): ReactElement => {

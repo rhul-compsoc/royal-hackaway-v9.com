@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { ReactElement } from 'react'
 
-import { Button } from '../components/button'
-import { H2 } from '../components/typography'
+import { Button } from '../ui/button'
+import { H2 } from '../ui/typography'
 import { HackathonsUK } from './companies/hackathons-uk'
 import { KeyboardCo } from './companies/keyboardco'
 import { MLH } from './companies/mlh'

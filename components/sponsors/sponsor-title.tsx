@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { H3 } from '../components/typography'
+import { H3 } from '../ui/typography'
 
 interface SponsorTitleProps {
   children?: ReactNode

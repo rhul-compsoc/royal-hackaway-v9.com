@@ -2,8 +2,9 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ComponentType, ReactElement } from 'react'
 
-import { isDefined } from '../utils/is-defined'
-import { isNonEmptyArray } from '../utils/is-non-empty-array'
+import { isDefined } from '@/lib/is/is-defined'
+import { isNonEmptyArray } from '@/lib/is/is-non-empty-array'
+
 import { H4 } from './typography'
 
 interface AccordionItemProps {

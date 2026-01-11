@@ -3,8 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ReactElement } from 'react'
 
-import { cn } from '../utils/cn'
-import { isDefined } from '../utils/is-defined'
+import { isDefined } from '@/lib/is/is-defined'
+import { cn } from '@/lib/utils/cn'
 
 interface SponsorProps {
   img: StaticImageData

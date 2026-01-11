@@ -1,6 +1,6 @@
 import { ComponentProps, ReactElement, ReactNode } from 'react'
 
-import { cn } from '../utils/cn'
+import { cn } from '@/lib/utils/cn'
 
 type ButtonVariant = 'primary' | 'secondary' | 'discord'
 

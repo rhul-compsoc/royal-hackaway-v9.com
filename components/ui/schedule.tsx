@@ -1,6 +1,7 @@
 import { ReactElement } from 'react'
 
-import { isNonEmptyArray } from '../utils/is-non-empty-array'
+import { isNonEmptyArray } from '@/lib/is/is-non-empty-array'
+
 import { ScheduleItem, ScheduleItemProps } from './schedule-item'
 
 interface ScheduleProps {

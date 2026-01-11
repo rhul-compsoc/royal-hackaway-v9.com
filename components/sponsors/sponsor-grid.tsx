@@ -1,7 +1,8 @@
 import { ReactElement, ReactNode } from 'react'
 
-import { H4 } from '../components/typography'
-import { isDefined } from '../utils/is-defined'
+import { isDefined } from '@/lib/is/is-defined'
+
+import { H4 } from '../ui/typography'
 
 interface SponsorGridProps {
   children?: ReactNode

@@ -1,6 +1,6 @@
 import { ComponentProps, ReactElement } from 'react'
 
-import { cn } from '../utils/cn'
+import { cn } from '@/lib/utils/cn'
 
 const Divider = ({ className, ...props }: ComponentProps<'hr'>): ReactElement => (
   <hr

@@ -5,10 +5,10 @@ import Description from '@/content/information/description.mdx'
 import Location from '@/content/information/location.mdx'
 import Title from '@/content/information/title.mdx'
 
-import { H2, H4 } from '../components/typography'
 import { DiscordIcon } from '../shared/discord-icon'
 import { InstagramIcon } from '../shared/instagram-icon'
 import { TicketsButton } from '../shared/tickets-button'
+import { H2, H4 } from '../ui/typography'
 import { InformationMap } from './information-map'
 
 interface InformationProps {

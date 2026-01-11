@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ReactElement } from 'react'
 
-import { Button } from '../components/button'
+import { Button } from '../ui/button'
 
 const TicketsButton = (): ReactElement => (
   <Link href="/tickets" target="_blank">

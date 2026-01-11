@@ -1,7 +1,7 @@
 import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { ReactElement } from 'react'
 
-import { Icon } from '../components/icon'
+import { Icon } from '../ui/icon'
 
 const DiscordIcon = (): ReactElement => (
   <Icon

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import { ReactElement } from 'react'
 
-import { Button } from '../components/button'
+import { Button } from '../ui/button'
 
 const DiscordButton = (): ReactElement => (
   <Link href="/discord" target="_blank">

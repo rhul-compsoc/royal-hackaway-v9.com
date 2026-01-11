@@ -1,13 +1,13 @@
 import { ReactElement } from 'react'
 
-import { Committee } from './committee/committee'
-import { Divider } from './components/divider'
-import { FAQ } from './faq/faq'
-import { Footer } from './footer/footer'
-import { Header } from './header/header'
-import { Information } from './information/information'
-import { Sponsors } from './sponsors/sponsors'
-import { Timetable } from './timetable/timetable'
+import { Committee } from '@/components/committee/committee'
+import { FAQ } from '@/components/faq/faq'
+import { Footer } from '@/components/footer/footer'
+import { Header } from '@/components/header/header'
+import { Information } from '@/components/information/information'
+import { Sponsors } from '@/components/sponsors/sponsors'
+import { Timetable } from '@/components/timetable/timetable'
+import { Divider } from '@/components/ui/divider'
 
 const Page = (): ReactElement => {
   return (

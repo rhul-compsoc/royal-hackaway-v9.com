@@ -1,6 +1,6 @@
 import { ComponentProps, ReactElement } from 'react'
 
-import { cn } from '../utils/cn'
+import { cn } from '@/lib/utils/cn'
 
 const H2 = ({ className, ...props }: ComponentProps<'h2'>): ReactElement => {
   return <h2 className={cn('mt-0.5 font-extrabold text-4xl lg:text-5xl text-text', className)} {...props} />
