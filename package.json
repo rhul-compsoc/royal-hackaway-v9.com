@@ -1,6 +1,6 @@
 {
   "name": "royal-hackaway-v9.com",
-  "version": "0.1.0",
+  "version": "9.0.0",
   "private": true,
   "packageManager": "pnpm@9.15.4",
   "scripts": {
