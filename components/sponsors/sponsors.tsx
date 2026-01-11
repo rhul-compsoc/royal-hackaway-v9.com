@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { ReactElement } from 'react'
 
+import { metadata } from '@/content/sponsors/index.mdx'
+
 import { Button } from '../ui/button'
 import { H2 } from '../ui/typography'
 import { HackathonsUK } from './companies/hackathons-uk'
@@ -15,11 +17,11 @@ import { SponsorTitle } from './sponsor-title'
 export const Sponsors = (): ReactElement => {
   return (
     <div className="mb-10" id="sponsors">
-      <H2 className="text-center mb-4">Meet our Sponsors!</H2>
+      <H2 className="text-center mb-4">{metadata.title}</H2>
       <div className="w-full mb-4">
         <div className="mx-auto w-fit">
           <Link href="mailto:computing@royalholloway.su" target="_blank">
-            <Button className="hover:cursor-pointer">Want to sponsor us?</Button>
+            <Button className="hover:cursor-pointer">{metadata.sponsorUs}</Button>
           </Link>
         </div>
       </div>
