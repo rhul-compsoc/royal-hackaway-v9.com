@@ -1,4 +1,4 @@
-import { faGithub, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGithub, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
@@ -18,11 +18,10 @@ const Footer = (): ReactElement => {
           <div>
             <p className="font-medium text-gray-900">CompSoc</p>
             <p className="mt-8 space-y-1 text-sm text-gray-700">Made with love by RHUL Computing Society</p>
-
             <ul className="mt-8 flex gap-6">
               <li>
                 <Link
-                  href="https://www.instagram.com/rhulcompsoc/?hl=en"
+                  href="/instagram"
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
@@ -33,13 +32,23 @@ const Footer = (): ReactElement => {
               </li>
               <li>
                 <Link
+                  href="/discord"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-700 transition hover:opacity-75"
+                >
+                  <span className="sr-only">Discord</span>
+                  <FontAwesomeIcon icon={faDiscord} />
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="https://twitter.com/rhulcompsoc"
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
                 >
                   <span className="sr-only">Twitter</span>
-
                   <FontAwesomeIcon icon={faXTwitter} />
                 </Link>
               </li>
@@ -51,7 +60,6 @@ const Footer = (): ReactElement => {
                   className="text-gray-700 transition hover:opacity-75"
                 >
                   <span className="sr-only">GitHub</span>
-
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
               </li>
@@ -63,7 +71,6 @@ const Footer = (): ReactElement => {
                   className="text-gray-700 transition hover:opacity-75"
                 >
                   <span className="sr-only">LinkedIn</span>
-
                   <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
               </li>
@@ -75,7 +82,6 @@ const Footer = (): ReactElement => {
                   className="text-gray-700 transition hover:opacity-75"
                 >
                   <span className="sr-only">Website</span>
-
                   <FontAwesomeIcon icon={faGlobe} />
                 </Link>
               </li>

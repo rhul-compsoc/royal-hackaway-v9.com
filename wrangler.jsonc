@@ -20,5 +20,6 @@
   "vars": {
     "TICKETS_REDIRECT_URL": "https://pretix.eu/royalhackaway/v9",
     "DISCORD_REDIRECT_URL": "https://discord.gg/XptvsDZwXc",
+    "INSTAGRAM_REDIRECT_URL": "https://www.instagram.com/royalhackaway/",
   },
 }

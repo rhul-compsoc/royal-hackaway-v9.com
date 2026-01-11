@@ -1,7 +1,3 @@
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
 import { ReactElement } from 'react'
 
 import Date from '@/content/information/date.mdx'
@@ -10,8 +6,10 @@ import Location from '@/content/information/location.mdx'
 import Title from '@/content/information/title.mdx'
 
 import { H2, H4 } from '../components/typography'
+import { DiscordIcon } from '../shared/discord-icon'
+import { InstagramIcon } from '../shared/instagram-icon'
+import { TicketsButton } from '../shared/tickets-button'
 import { InformationMap } from './information-map'
-import { TicketsButton } from './tickets-button'
 
 interface InformationProps {
   _?: never
@@ -32,12 +30,8 @@ const Information = ({}: InformationProps): ReactElement => {
         <Description />
       </div>
       <div className="flex flex-row gap-x-2">
-        <Link href="https://www.instagram.com/royalhackaway/" target="_blank" className="transition hover:opacity-75">
-          <FontAwesomeIcon size="xl" className="hover:scale-110" icon={faInstagram} />
-        </Link>
-        <Link href="https://discord.gg/XptvsDZwXc" target="_blank" className="transition hover:opacity-75">
-          <FontAwesomeIcon size="xl" className="hover:scale-110" icon={faDiscord} />
-        </Link>
+        <InstagramIcon />
+        <DiscordIcon />
       </div>
       <InformationMap />
     </div>

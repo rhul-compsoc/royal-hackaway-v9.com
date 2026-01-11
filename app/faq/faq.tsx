@@ -4,7 +4,7 @@ import { ReactElement } from 'react'
 
 import { Accordion } from '../components/accordion'
 import { H2, H3 } from '../components/typography'
-import { DiscordButton } from './discord-button'
+import { DiscordButton } from '../shared/discord-button'
 import { getFAQs } from './get-faqs'
 
 const FAQ = (): ReactElement => {
