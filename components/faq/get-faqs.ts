@@ -2,7 +2,7 @@ import { ComponentType } from 'react'
 
 import { type FAQ, faq } from './types'
 
-const context = require.context('@/content/faq', false, /\.mdx$/)
+const context = require.context('@/content/faq/questions', false, /\.mdx$/)
 
 const getFAQs = (): FAQ[] => {
   const faqs = context.keys().map((key) => {

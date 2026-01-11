@@ -1,9 +1,6 @@
 import { ReactElement } from 'react'
 
-import Date from '@/content/information/date.mdx'
-import Description from '@/content/information/description.mdx'
-import Location from '@/content/information/location.mdx'
-import Title from '@/content/information/title.mdx'
+import Index, { metadata } from '@/content/information/index.mdx'
 
 import { DiscordIcon } from '../shared/discord-icon'
 import { InstagramIcon } from '../shared/instagram-icon'
@@ -11,23 +8,18 @@ import { TicketsButton } from '../shared/tickets-button'
 import { H2, H4 } from '../ui/typography'
 import { InformationMap } from './information-map'
 
-interface InformationProps {
-  _?: never
-}
-
-const Information = ({}: InformationProps): ReactElement => {
+const Information = (): ReactElement => {
   return (
     <div className="relative flex flex-col min-h-[50%] items-center gap-y-4" id="info">
-      <H2>
-        <Title />
-      </H2>
+      <H2>{metadata.title}</H2>
       <H4 className="text-center">
-        <Date />
-        <Location />
+        {metadata.date}
+        <br />
+        {metadata.location}
       </H4>
       <TicketsButton />
       <div className="w-3/5 leading-relaxed">
-        <Description />
+        <Index />
       </div>
       <div className="flex flex-row gap-x-2">
         <InstagramIcon />

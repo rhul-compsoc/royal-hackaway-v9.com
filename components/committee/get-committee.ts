@@ -4,7 +4,7 @@ import { type Committee, committee } from './types'
 
 // Webpack's require.context runs at BUILD TIME, not runtime
 // This bundles all .mdx files from the directory into the output
-const committeeContext = require.context('@/content/committee', false, /\.mdx$/)
+const committeeContext = require.context('@/content/committee/members', false, /\.mdx$/)
 
 const getCommittee = (): Committee[] => {
   const committeeData = committeeContext.keys().map((key) => {
