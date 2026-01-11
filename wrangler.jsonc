@@ -4,6 +4,7 @@
   "name": "royal-hackaway-v9",
   "compatibility_date": "2026-01-02",
   "compatibility_flags": ["nodejs_compat"],
+  "preview_urls": true,
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS",
@@ -19,5 +20,7 @@
   "vars": {
     "TICKETS_REDIRECT_URL": "https://pretix.eu/royalhackaway/v9",
     "DISCORD_REDIRECT_URL": "https://discord.gg/XptvsDZwXc",
+    "INSTAGRAM_REDIRECT_URL": "https://www.instagram.com/royalhackaway/",
+    "DEVPOST_REDIRECT_URL": "https://royal-hackaway-v9.devpost.com/",
   },
 }
