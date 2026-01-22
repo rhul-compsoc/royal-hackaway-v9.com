@@ -5,6 +5,7 @@ import { FAQ } from '@/components/faq/faq'
 import { Footer } from '@/components/footer/footer'
 import { Header } from '@/components/header/header'
 import { Information } from '@/components/information/information'
+import { MLHBadge } from '@/components/shared/mlh-badge'
 import { Sponsors } from '@/components/sponsors/sponsors'
 import { Timetable } from '@/components/timetable/timetable'
 import { Divider } from '@/components/ui/divider'
@@ -12,6 +13,7 @@ import { Divider } from '@/components/ui/divider'
 const Page = (): ReactElement => {
   return (
     <main>
+      <MLHBadge />
       <div>
         <Header />
       </div>
