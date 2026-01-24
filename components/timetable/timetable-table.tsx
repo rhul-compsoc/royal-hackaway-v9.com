@@ -2,6 +2,7 @@ import { ReactElement } from 'react'
 
 import { isNonEmptyArray } from '@/lib/is/is-non-empty-array'
 
+import { H4 } from '../ui/typography'
 import { TimetableEvent } from './timetable-event'
 import { Event } from './types'
 
@@ -11,23 +12,13 @@ interface TimetableTableProps {
 }
 
 const TimetableTable = ({ day, events }: TimetableTableProps): ReactElement => (
-  <div className="rounded-lg h-fit border-gray-200 overflow-hidden border">
-    <table className="w-full divide-y-2 divide-gray-200 bg-white text-sm">
-      <thead className="ltr:text-left rtl:text-right font-bold">
-        <tr>
-          <th colSpan={2} className="whitespace-nowrap px-4 py-2 text-gray-900">
-            <strong>
-              <u>{day}</u>
-            </strong>
-          </th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-gray-200">
-        {isNonEmptyArray(events)
-          ? events.map((event, index) => <TimetableEvent key={index} event={event} />)
-          : undefined}
-      </tbody>
-    </table>
+  <div className="rounded-2xl h-fit overflow-hidden transition-shadow duration-300">
+    <div className="bg-primary px-6 py-4">
+      <H4 className="text-white font-bold text-center">{day}</H4>
+    </div>
+    <div className="divide-y divide-neutral-light/50 border border-t-0 border-neutral-light/50 rounded-b-2xl">
+      {isNonEmptyArray(events) ? events.map((event, index) => <TimetableEvent key={index} event={event} />) : undefined}
+    </div>
   </div>
 )
 

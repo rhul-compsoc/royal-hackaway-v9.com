@@ -27,7 +27,7 @@ const Timetable = ({ showSchedule = false }: TimetableProps): ReactElement => {
           <H4>Schedule coming soon...</H4>
         </div>
       ) : (
-        <div className="overflow-x-auto rounded-lg border-gray-200 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-auto place-content-center">
+        <div className="overflow-x-auto mb-12 rounded-lg border-gray-200 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-auto place-content-center">
           <TimetableTable day="January 31st - Day 1" events={dayOne} />
           <TimetableTable day="February 1st - Day 2" events={dayTwo} />
         </div>
