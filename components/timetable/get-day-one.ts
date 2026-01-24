@@ -1,6 +1,6 @@
 import { ComponentType } from 'react'
 
-import { Event,event } from './types'
+import { Event, event } from './types'
 
 const context = require.context('@/content/timetable/day-one', false, /\.mdx$/)
 
