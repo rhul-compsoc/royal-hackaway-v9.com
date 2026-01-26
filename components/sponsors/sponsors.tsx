@@ -42,12 +42,13 @@ export const Sponsors = (): ReactElement => {
         </SponsorGroup>
         <SponsorGroup>
           <SponsorTitle>Bronze</SponsorTitle>
-          <SponsorGrid />
+          <SponsorGrid>
+            <KeyboardCo />
+          </SponsorGrid>
         </SponsorGroup>
         <SponsorGroup>
           <SponsorTitle>Supporter</SponsorTitle>
           <SponsorGrid>
-            <KeyboardCo />
             <PureButtons />
           </SponsorGrid>
         </SponsorGroup>
