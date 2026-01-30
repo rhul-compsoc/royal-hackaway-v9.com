@@ -1,7 +1,6 @@
 import z from 'zod'
 
 const event = z.object({
-  order: z.number().optional(),
   startTime: z.string(),
   endTime: z.string().optional(),
   content: z.any().optional(),

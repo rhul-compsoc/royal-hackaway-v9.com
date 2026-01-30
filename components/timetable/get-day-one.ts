@@ -17,7 +17,9 @@ const getDayOne = (): Event[] => {
     }
   })
 
-  return events.map((data) => event.parse(data)).sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+  return events
+    .map((data) => event.parse(data))
+    .sort((a, b) => a.startTime.replace(/[^\d:]/g, '').localeCompare(b.startTime.replace(/[^\d:]/g, '')))
 }
 
 export { getDayOne }
