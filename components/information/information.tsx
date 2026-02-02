@@ -2,9 +2,9 @@ import { ReactElement } from 'react'
 
 import Index, { metadata } from '@/content/information/index.mdx'
 
+import { DevpostButton } from '../shared/devpost-button'
 import { DiscordIcon } from '../shared/discord-icon'
 import { InstagramIcon } from '../shared/instagram-icon'
-import { TicketsButton } from '../shared/tickets-button'
 import { H2, H4 } from '../ui/typography'
 import { InformationMap } from './information-map'
 
@@ -17,7 +17,7 @@ const Information = (): ReactElement => {
         <br />
         {metadata.location}
       </H4>
-      <TicketsButton />
+      <DevpostButton />
       <div className="w-3/5 leading-relaxed">
         <Index />
       </div>
