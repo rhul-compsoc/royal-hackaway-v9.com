@@ -16,7 +16,8 @@
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "deploy:preview": "opennextjs-cloudflare build && wrangler deploy --name royal-hackaway-v9-preview-$(git branch --show-current | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9-]/-/g' | sed 's/--*/-/g' | cut -c1-30)",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "prepare": "husky"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
@@ -31,6 +32,7 @@
     "@tailwindcss/postcss": "^4.3.0",
     "@types/mdx": "^2.0.13",
     "clsx": "^2.1.1",
+    "husky": "^9.1.7",
     "next": "15.5.9",
     "react": "19.2.3",
     "react-dom": "19.2.3",
