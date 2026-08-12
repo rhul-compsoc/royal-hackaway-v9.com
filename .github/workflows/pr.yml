@@ -29,11 +29,11 @@ jobs:
       - name: Run fmt
         run: pnpm run fmt
 
-      - name: Run lint
-        run: pnpm run lint
-
       - name: Run build
         run: pnpm run build
 
       - name: Run typecheck
         run: pnpm run typecheck
+
+      - name: Run lint
+        run: pnpm run lint
