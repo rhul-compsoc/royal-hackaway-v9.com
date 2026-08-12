@@ -1,4 +1,4 @@
-import  { type StaticImageData } from 'next/image'
+import { type StaticImageData } from 'next/image'
 import z from 'zod'
 
 const committee = z.object({

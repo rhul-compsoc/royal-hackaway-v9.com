@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import  { type StaticImageData } from 'next/image';
+import { type StaticImageData } from 'next/image'
 import Link from 'next/link'
-import  { type ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import { isDefined } from '@/lib/is/is-defined'
 import { cn } from '@/lib/utils/cn'

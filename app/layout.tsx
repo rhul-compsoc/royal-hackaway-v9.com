@@ -1,8 +1,8 @@
 import './globals.css'
 
-import  { type Metadata } from 'next'
+import { type Metadata } from 'next'
 import localFont from 'next/font/local'
-import  { type ReactElement, type ReactNode } from 'react'
+import { type ReactElement, type ReactNode } from 'react'
 
 const kollektif = localFont({
   src: [

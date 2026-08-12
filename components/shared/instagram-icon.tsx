@@ -1,5 +1,5 @@
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import  { type ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import { Icon } from '../ui/icon'
 

@@ -1,4 +1,4 @@
-import  { type ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import rhulComputerScienceLogo from '@/public/sponsors/rhul-computer-science-logo.gif'
 

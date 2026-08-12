@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import  { type StaticImageData } from 'next/image';
-import  { type ReactElement } from 'react'
+import { type StaticImageData } from 'next/image'
+import { type ReactElement } from 'react'
 
 import placeholder from '@/public/committee/blank.webp'
 

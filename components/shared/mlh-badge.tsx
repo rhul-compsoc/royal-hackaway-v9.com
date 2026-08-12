@@ -22,8 +22,8 @@ const MLHBadge = () => (
       src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-red.svg"
       width={100}
       style={{
- width: '100%' 
-}}
+        width: '100%',
+      }}
     />
   </Link>
 )

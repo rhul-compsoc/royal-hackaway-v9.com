@@ -3,7 +3,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
-import  { type ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import logo from '@/public/hackaway-text.png'
 

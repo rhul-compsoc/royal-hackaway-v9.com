@@ -1,6 +1,6 @@
 'use client'
 
-import  { type ReactElement} from 'react';
+import { type ReactElement } from 'react'
 import { useEffect, useState } from 'react'
 
 import { CountdownValue } from './countdown-value'

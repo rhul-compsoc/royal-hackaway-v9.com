@@ -1,4 +1,4 @@
-import  { type ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import { Committee } from '@/components/committee/committee'
 import { FAQ } from '@/components/faq/faq'

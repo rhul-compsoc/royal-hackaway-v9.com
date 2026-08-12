@@ -1,4 +1,4 @@
-import  { type ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import hackathonsUkLogo from '@/public/sponsors/hackathons-uk-logo.png'
 

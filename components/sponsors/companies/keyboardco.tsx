@@ -1,4 +1,4 @@
-import  { type ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import keyboardCoLogo from '@/public/sponsors/keyboard-co-logo.png'
 

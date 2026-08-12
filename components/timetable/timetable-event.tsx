@@ -1,8 +1,8 @@
-import  { type ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import { isDefined } from '@/lib/is/is-defined'
 
-import  { type Event } from './types'
+import { type Event } from './types'
 
 interface TimetableEventProps {
   event: Event
