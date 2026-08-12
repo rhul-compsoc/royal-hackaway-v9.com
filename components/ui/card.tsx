@@ -13,10 +13,10 @@ interface CardProps {
 }
 
 const Card = ({ text, subtext, image = placeholder, alt }: CardProps): ReactElement => (
-  <article className="overflow-hidden rounded-4xl shadow-2xl transition-transform duration-300 hover:scale-110 hover:shadow-4xl">
+  <article className="hover:shadow-4xl overflow-hidden rounded-4xl shadow-2xl transition-transform duration-300 hover:scale-110">
     <Image alt={alt ?? text} src={image} placeholder="blur" className="h-56 w-full object-cover" />
-    <div className="bg-primary p-4 sm:p-6 transition-colors duration-300">
-      <H3 className="mt-0.5 font-extrabold text-2xl text-white">{text}</H3>
+    <div className="bg-primary p-4 transition-colors duration-300 sm:p-6">
+      <H3 className="mt-0.5 text-2xl font-extrabold text-white">{text}</H3>
       <H4 className="mt-0.5 text-lg font-light text-white">{subtext}</H4>
     </div>
   </article>

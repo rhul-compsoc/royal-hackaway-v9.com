@@ -38,7 +38,7 @@ const Countdown = ({ date }: CountdownProps): ReactElement => {
   }, [date])
 
   return (
-    <div className="w-full lg:grid lg:grid-cols-4 px-5 lg:px-0">
+    <div className="w-full px-5 lg:grid lg:grid-cols-4 lg:px-0">
       <CountdownValue label="days" value={days} />
       <CountdownValue label="hours" value={hours} />
       <CountdownValue label="minutes" value={minutes} />

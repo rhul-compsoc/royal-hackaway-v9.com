@@ -36,7 +36,7 @@ const Button = ({
   return (
     <button
       className={cn(
-        'inline-block rounded-2xl text-sm font-medium focus:outline-none shadow-2xl hover:shadow-4xl mt-2 active:scale-95 hover:scale-105 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent',
+        'hover:shadow-4xl focus-visible:ring-accent mt-2 inline-block rounded-2xl text-sm font-medium shadow-2xl hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 active:scale-95',
         variantClasses[variant],
         sizeClasses[size],
         className,

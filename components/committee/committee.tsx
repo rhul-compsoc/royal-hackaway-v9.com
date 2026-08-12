@@ -11,8 +11,8 @@ const Committee = (): ReactElement => {
   const committee = getCommittee()
 
   return (
-    <div className="relative flex flex-col min-h-[50%] items-center py-24" id="team">
-      <H2 className="text-center mb-4">{metadata.title}</H2>
+    <div className="relative flex min-h-[50%] flex-col items-center py-24" id="team">
+      <H2 className="mb-4 text-center">{metadata.title}</H2>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-8">
         {isNonEmptyArray(committee)
           ? committee.map((member, index) => <Card key={`${index}-${member.text}`} {...member} />)

@@ -10,7 +10,7 @@ import { InformationMap } from './information-map'
 
 const Information = (): ReactElement => {
   return (
-    <div className="relative flex flex-col min-h-[50%] items-center gap-y-4" id="info">
+    <div className="relative flex min-h-[50%] flex-col items-center gap-y-4" id="info">
       <H2>{metadata.title}</H2>
       <H4 className="text-center">
         {metadata.date}

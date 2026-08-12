@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 
 const DevpostButton = (): ReactElement => (
   <Link href="/devpost" target="_blank">
-    <Button className="hover:cursor-pointer ">Check out the Devpost!</Button>
+    <Button className="hover:cursor-pointer">Check out the Devpost!</Button>
   </Link>
 )
 

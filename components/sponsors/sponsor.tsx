@@ -42,7 +42,7 @@ const Sponsor = ({ img, alt, href, className, tier, size = 'md' }: SponsorProps)
       {isDefined(tier) ? (
         <div
           className={cn(
-            'p-2 rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300 hover:shadow-4xl',
+            'hover:shadow-4xl rounded-xl p-2 shadow-2xl transition-transform duration-300 hover:scale-105',
             tierGradients[tier],
           )}
         >

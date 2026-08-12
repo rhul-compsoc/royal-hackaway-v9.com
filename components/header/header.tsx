@@ -13,8 +13,8 @@ import { Stats } from '../stats/stats'
 export const Header = () => {
   return (
     <>
-      <div className="absolute h-screen w-full [clip-path:inset(0,0,0,0)] bg-black -z-50">
-        <div className="fixed w-full h-full left-0 top-0">
+      <div className="absolute -z-50 h-screen w-full bg-black [clip-path:inset(0,0,0,0)]">
+        <div className="fixed top-0 left-0 h-full w-full">
           <Image
             alt="Hackaway Photo"
             src={background}
@@ -30,19 +30,19 @@ export const Header = () => {
             title="<//"
             alt="Hackaway Logo"
             src={text}
-            className="blur-none drop-shadow-[3px_3px_rgba(217,91,23,.75)] mx-auto lg:w-1/2 w-3/4"
+            className="mx-auto w-3/4 blur-none drop-shadow-[3px_3px_rgba(217,91,23,.75)] lg:w-1/2"
           />
         </div>
-        <div className="w-full blur-none mt-5 sm:mt-10 mb-20 lg:mb-10">
-          <div className="w-fit lg:w-4/5 mx-auto py-5 sm:mt-20 bg-accent rounded-4xl">
+        <div className="mt-5 mb-20 w-full blur-none sm:mt-10 lg:mb-10">
+          <div className="bg-accent mx-auto w-fit rounded-4xl py-5 sm:mt-20 lg:w-4/5">
             <Stats />
           </div>
         </div>
-        <div className="h-full w-full mt-5 sm:mt-10 lg:mt-32 block md:hidden lg:block text-sm lg:text-3xl">
+        <div className="mt-5 block h-full w-full text-sm sm:mt-10 md:hidden lg:mt-32 lg:block lg:text-3xl">
           <div className="mx-auto w-fit">
             <Link href="/#info">
               <FontAwesomeIcon
-                className="drop-shadow-[6px_9px_rgb(217,91,23)] animate-[bounce_3s_infinite] hover:scale-110 transition-transform"
+                className="animate-[bounce_3s_infinite] drop-shadow-[6px_9px_rgb(217,91,23)] transition-transform hover:scale-110"
                 size="5x"
                 color="white"
                 icon={faChevronDown}

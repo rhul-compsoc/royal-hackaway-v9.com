@@ -12,11 +12,11 @@ interface TimetableTableProps {
 }
 
 const TimetableTable = ({ day, events }: TimetableTableProps): ReactElement => (
-  <div className="rounded-2xl h-fit overflow-hidden transition-shadow duration-300">
+  <div className="h-fit overflow-hidden rounded-2xl transition-shadow duration-300">
     <div className="bg-primary px-6 py-4">
-      <H4 className="text-white font-bold text-center">{day}</H4>
+      <H4 className="text-center font-bold text-white">{day}</H4>
     </div>
-    <div className="divide-y divide-neutral-light/50 border border-t-0 border-neutral-light/50 rounded-b-2xl">
+    <div className="divide-neutral-light/50 border-neutral-light/50 divide-y rounded-b-2xl border border-t-0">
       {isNonEmptyArray(events) ? events.map((event, index) => <TimetableEvent key={index} event={event} />) : undefined}
     </div>
   </div>

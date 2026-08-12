@@ -17,8 +17,8 @@ import { SponsorTitle } from './sponsor-title'
 export const Sponsors = (): ReactElement => {
   return (
     <div className="mb-10" id="sponsors">
-      <H2 className="text-center mb-4">{metadata.title}</H2>
-      <div className="w-full mb-4">
+      <H2 className="mb-4 text-center">{metadata.title}</H2>
+      <div className="mb-4 w-full">
         <div className="mx-auto w-fit">
           <Link href="mailto:computing@royalholloway.su" target="_blank">
             <Button className="hover:cursor-pointer">{metadata.sponsorUs}</Button>

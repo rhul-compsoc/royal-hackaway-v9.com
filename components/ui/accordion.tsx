@@ -18,14 +18,11 @@ interface AccordionProps {
 
 const Accordion = ({ elements }: AccordionProps): ReactElement => {
   return (
-    <div className="space-y-4 w-full px-5 sm:px-10 md:w-3/4 md:px-0 lg:w-2/3">
+    <div className="w-full space-y-4 px-5 sm:px-10 md:w-3/4 md:px-0 lg:w-2/3">
       {isNonEmptyArray(elements) &&
         elements.map((element, index) => (
           <details key={index} className="group [&_summary::-webkit-details-marker]:hidden">
-            <summary
-              className="flex cursor-pointer items-center justify-between gap-1.5 rounded-2xl bg-primary hover:bg-accent outline-none shadow-xl hover:shadow-4xl p-4 text-white transition-all duration-200 hover:scale-105 active:scale-95
-            focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent"
-            >
+            <summary className="bg-primary hover:bg-accent hover:shadow-4xl focus-visible:ring-accent flex cursor-pointer items-center justify-between gap-1.5 rounded-2xl p-4 text-white shadow-xl transition-all duration-200 outline-none hover:scale-105 focus-visible:ring-2 focus-visible:ring-offset-2 active:scale-95">
               <H4 className="text-white">{element.title}</H4>
               <FontAwesomeIcon
                 icon={faChevronDown}

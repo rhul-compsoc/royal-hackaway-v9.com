@@ -11,11 +11,11 @@ interface ScheduleProps {
 
 const Schedule = ({ day, events }: ScheduleProps): ReactElement => {
   return (
-    <div className="rounded-lg h-fit border-gray-200 overflow-hidden border">
+    <div className="h-fit overflow-hidden rounded-lg border border-gray-200">
       <table className="w-full divide-y-2 divide-gray-200 bg-white text-sm">
-        <thead className="ltr:text-left rtl:text-right font-bold">
+        <thead className="font-bold ltr:text-left rtl:text-right">
           <tr>
-            <th colSpan={2} className="whitespace-nowrap px-4 py-2 text-gray-900">
+            <th colSpan={2} className="px-4 py-2 whitespace-nowrap text-gray-900">
               <strong>
                 <u>{day}</u>
               </strong>
