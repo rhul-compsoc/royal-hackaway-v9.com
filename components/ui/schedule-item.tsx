@@ -1,13 +1,13 @@
-import { ReactElement, ReactNode } from 'react'
+import  { type ReactElement, type ReactNode } from 'react'
 
 interface ScheduleItemProps {
-  key?: string | number
+  description?: ReactNode
+  key?: number | string
   time?: ReactNode
   title: ReactNode
-  description?: ReactNode
 }
 
-const ScheduleItem = ({ key, time, title, description }: ScheduleItemProps): ReactElement => {
+const ScheduleItem = ({ description, key, time, title }: ScheduleItemProps): ReactElement => {
   return (
     <tr key={key}>
       <td className="px-4 py-2 text-center font-medium whitespace-nowrap text-gray-900">{time}</td>

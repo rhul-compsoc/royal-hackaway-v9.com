@@ -5,9 +5,9 @@ declare module '*.css' {
 }
 
 declare module '*.mdx' {
-  import type { ComponentType } from 'react'
+  import { type ComponentType } from 'react'
 
-  export const metadata
+  export const metadata: Record<string, unknown>
 
   const MDXComponent: ComponentType
   export default MDXComponent

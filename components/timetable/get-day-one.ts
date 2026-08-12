@@ -1,18 +1,20 @@
-import { ComponentType } from 'react'
+// cursed MDX workarounds
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-import { Event, event } from './types'
+import { type Event } from './types'
+import { event } from './types'
 
 const context = require.context('@/content/timetable/day-one', false, /\.mdx$/)
 
 const getDayOne = (): Event[] => {
   const events = context.keys().map((key) => {
-    const mod = context(key) as unknown as {
-      metadata: Omit<Event, 'content'>
-      default?: ComponentType
-    }
+    const mod = context(key)
 
     return {
+      // @ts-expect-error cursed dynamic content
       ...mod.metadata,
+      // @ts-expect-error cursed dynamic content
       content: mod.default,
     }
   })

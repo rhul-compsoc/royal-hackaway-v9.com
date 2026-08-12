@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from 'react'
+import  { type ReactElement, type ReactNode } from 'react'
 
 import { isDefined } from '@/lib/is/is-defined'
 

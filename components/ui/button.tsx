@@ -1,36 +1,36 @@
-import { ComponentProps, ReactElement, ReactNode } from 'react'
+import  { type ComponentProps, type ReactElement, type ReactNode } from 'react'
 
 import { cn } from '@/lib/utils/cn'
 
-type ButtonVariant = 'primary' | 'secondary' | 'discord'
+type ButtonVariant = 'discord' | 'primary' | 'secondary'
 
-type ButtonSize = 'sm' | 'md' | 'lg'
+type ButtonSize = 'lg' | 'md' | 'sm'
 
 interface ButtonProps {
-  className?: string
-  variant?: ButtonVariant
-  size?: ButtonSize
   children?: ReactNode
+  className?: string
+  size?: ButtonSize
+  variant?: ButtonVariant
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
+  discord: 'bg-discord hover:bg-discord-accent focus:bg-discord-accent text-white transition-all duration-200',
   primary: 'bg-primary hover:bg-accent text-white transition-all duration-200',
   secondary:
     'bg-secondary hover:bg-secondary text-primary transition-all duration-200 border-2 border-primary hover:border-accent',
-  discord: 'bg-discord hover:bg-discord-accent focus:bg-discord-accent text-white transition-all duration-200',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: 'px-12 py-3 text-md',
-  md: 'px-16 py-4 text-lg',
   lg: 'px-24 py-6 text-xl',
+  md: 'px-16 py-4 text-lg',
+  sm: 'px-12 py-3 text-md',
 }
 
 const Button = ({
-  variant = 'primary',
-  size = 'md',
   children,
   className,
+  size = 'md',
+  variant = 'primary',
   ...props
 }: ButtonProps & ComponentProps<'button'>): ReactElement => {
   return (

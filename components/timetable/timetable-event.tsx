@@ -1,12 +1,12 @@
-import { ReactElement } from 'react'
+import  { type ReactElement } from 'react'
 
 import { isDefined } from '@/lib/is/is-defined'
 
-import { Event } from './types'
+import  { type Event } from './types'
 
 interface TimetableEventProps {
-  key?: string | number
   event: Event
+  key?: number | string
 }
 
 const TimetableEvent = ({ event, key }: TimetableEventProps): ReactElement => (

@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import  { type ReactElement } from 'react'
 
 import { metadata } from '@/content/faq/index.mdx'
 

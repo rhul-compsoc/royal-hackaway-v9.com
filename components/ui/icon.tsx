@@ -1,12 +1,12 @@
-import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
+import { type IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
-import { ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 interface IconBaseProps {
   className?: string
-  size?: 'sm' | 'lg' | 'xl'
   icon: IconDefinition
+  size?: 'lg' | 'sm' | 'xl'
 }
 
 interface IconVariantIcon extends IconBaseProps {
@@ -14,20 +14,23 @@ interface IconVariantIcon extends IconBaseProps {
 }
 
 interface IconVariantLink extends IconBaseProps {
-  variant: 'link'
   href: string
   target?: string
+  variant: 'link'
 }
 
 type IconProps = IconVariantIcon | IconVariantLink
 
 const Icon = (props: IconProps): ReactElement => {
-  const { className, size = 'lg', icon } = props
-  const content = <FontAwesomeIcon className={className} size={size} icon={icon} />
+  const { className, icon, size = 'lg', variant } = props
 
-  if (props.variant === 'link') {
+  const content = <FontAwesomeIcon className={className} icon={icon} size={size} />
+
+  if (variant === 'link') {
+    const { href, target } = props
+
     return (
-      <Link href={props.href} target={props.target} className="transition hover:opacity-75">
+      <Link className="transition hover:opacity-75" href={href} target={target}>
         {content}
       </Link>
     )

@@ -16,21 +16,21 @@ export const Header = () => {
       <div className="absolute -z-50 h-screen w-full bg-black [clip-path:inset(0,0,0,0)]">
         <div className="fixed top-0 left-0 h-full w-full">
           <Image
-            alt="Hackaway Photo"
-            src={background}
-            placeholder="blur"
             fill
+            alt="Hackaway Photo"
             className="object-cover blur brightness-[.35]"
+            placeholder="blur"
+            src={background}
           />
         </div>
       </div>
       <div className="min-h-screen items-center">
         <div className="w-full pt-10">
           <Image
-            title="<//"
             alt="Hackaway Logo"
-            src={text}
             className="mx-auto w-3/4 blur-none drop-shadow-[3px_3px_rgba(217,91,23,.75)] lg:w-1/2"
+            src={text}
+            title="<//"
           />
         </div>
         <div className="mt-5 mb-20 w-full blur-none sm:mt-10 lg:mb-10">
@@ -43,9 +43,9 @@ export const Header = () => {
             <Link href="/#info">
               <FontAwesomeIcon
                 className="animate-[bounce_3s_infinite] drop-shadow-[6px_9px_rgb(217,91,23)] transition-transform hover:scale-110"
-                size="5x"
                 color="white"
                 icon={faChevronDown}
+                size="5x"
               />
             </Link>
           </div>

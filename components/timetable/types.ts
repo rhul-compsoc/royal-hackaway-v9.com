@@ -1,9 +1,9 @@
 import z from 'zod'
 
 const event = z.object({
-  startTime: z.string(),
-  endTime: z.string().optional(),
   content: z.any().optional(),
+  endTime: z.string().optional(),
+  startTime: z.string(),
 })
 
 type Event = z.infer<typeof event>

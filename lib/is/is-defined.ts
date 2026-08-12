@@ -1,3 +1,3 @@
-const isDefined = <T>(value: T | undefined | null): value is T => value !== undefined && value !== null
+const isDefined = <T>(value: null | T | undefined): value is T => value !== undefined && value !== null
 
 export { isDefined }

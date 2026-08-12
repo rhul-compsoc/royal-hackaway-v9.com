@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import { metadata } from '@/content/committee/index.mdx'
 import { isNonEmptyArray } from '@/lib/is/is-non-empty-array'
@@ -15,7 +15,8 @@ const Committee = (): ReactElement => {
       <H2 className="mb-4 text-center">{metadata.title}</H2>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-8">
         {isNonEmptyArray(committee)
-          ? committee.map((member, index) => <Card key={`${index}-${member.text}`} {...member} />)
+          ? // eslint-disable-next-line react/no-array-index-key
+            committee.map((member, index) => <Card key={`${index}-${member.text}`} {...member} />)
           : undefined}
       </div>
     </div>
