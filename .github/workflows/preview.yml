@@ -29,6 +29,11 @@ jobs:
 
       - name: Build
         run: pnpm run open-build
+        env:
+          TICKETS_REDIRECT_URL: ${{ vars.TICKETS_REDIRECT_URL }}
+          DISCORD_REDIRECT_URL: ${{ vars.DISCORD_REDIRECT_URL }}
+          INSTAGRAM_REDIRECT_URL: ${{ vars.INSTAGRAM_REDIRECT_URL }}
+          DEVPOST_REDIRECT_URL: ${{ vars.DEVPOST_REDIRECT_URL }}
 
       - name: Deploy Preview
         uses: cloudflare/wrangler-action@v3
