@@ -1,20 +1,19 @@
-// cursed MDX workarounds
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import { type MDXContext } from '@/lib/mdx/mdx'
 
-import { type Event } from './types'
-import { event } from './types'
+import { type Event, event } from './types'
 
-const context = require.context('@/content/timetable/day-one', false, /\.mdx$/)
+interface Context {
+  title: string
+}
+
+const context = require.context('@/content/timetable/day-one', false, /\.mdx$/) as MDXContext<Context>
 
 const getDayOne = (): Event[] => {
   const events = context.keys().map((key) => {
     const mod = context(key)
 
     return {
-      // @ts-expect-error cursed dynamic content
       ...mod.metadata,
-      // @ts-expect-error cursed dynamic content
       content: mod.default,
     }
   })
