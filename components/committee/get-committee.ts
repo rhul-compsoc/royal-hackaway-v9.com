@@ -1,17 +1,17 @@
-import { ComponentType } from 'react'
+import { type MDXContext } from '@/lib/mdx/mdx'
 
 import { type Committee, committee } from './types'
 
-// Webpack's require.context runs at BUILD TIME, not runtime
-// This bundles all .mdx files from the directory into the output
-const committeeContext = require.context('@/content/committee/members', false, /\.mdx$/)
+interface Context {
+  title: string
+}
+
+const context = require.context('@/content/committee/members', false, /\.mdx$/) as MDXContext<Context>
 
 const getCommittee = (): Committee[] => {
-  const committeeData = committeeContext.keys().map((key) => {
-    const mod = committeeContext(key) as unknown as {
-      metadata: Omit<Committee, 'content'>
-      default?: ComponentType
-    }
+  const committeeData = context.keys().map((key) => {
+    const mod = context(key)
+
     return {
       ...mod.metadata,
       content: mod.default,

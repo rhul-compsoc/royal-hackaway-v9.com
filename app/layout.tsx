@@ -1,37 +1,37 @@
 import './globals.css'
 
-import type { Metadata } from 'next'
+import { type Metadata } from 'next'
 import localFont from 'next/font/local'
-import { ReactElement, ReactNode } from 'react'
+import { type ReactElement, type ReactNode } from 'react'
 
 const kollektif = localFont({
   src: [
     {
       path: './fonts/Kollektif-Regular.ttf',
-      weight: '400',
       style: 'normal',
+      weight: '400',
     },
     {
       path: './fonts/Kollektif-Italic.ttf',
-      weight: '400',
       style: 'italic',
+      weight: '400',
     },
     {
       path: './fonts/Kollektif-Bold.ttf',
-      weight: '700',
       style: 'normal',
+      weight: '700',
     },
     {
       path: './fonts/Kollektif-BoldItalic.ttf',
-      weight: '700',
       style: 'italic',
+      weight: '700',
     },
   ],
 })
 
 const metadata: Metadata = {
-  title: 'Royal Hackaway v9',
   description: 'Official website of Royal Hackaway v9!',
+  title: 'Royal Hackaway v9',
 }
 
 const RootLayout = ({

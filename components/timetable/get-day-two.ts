@@ -1,15 +1,16 @@
-import { ComponentType } from 'react'
+import { type MDXContext } from '@/lib/mdx/mdx'
 
-import { Event, event } from './types'
+import { type Event, event } from './types'
 
-const context = require.context('@/content/timetable/day-two', false, /\.mdx$/)
+interface Context {
+  title: string
+}
+
+const context = require.context('@/content/timetable/day-two', false, /\.mdx$/) as MDXContext<Context>
 
 const getDayTwo = (): Event[] => {
   const events = context.keys().map((key) => {
-    const mod = context(key) as unknown as {
-      metadata: Omit<Event, 'content'>
-      default?: ComponentType
-    }
+    const mod = context(key)
 
     return {
       ...mod.metadata,

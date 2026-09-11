@@ -1,21 +1,23 @@
 {
   "name": "royal-hackaway-v9.com",
-  "version": "9.1.1",
+  "version": "9.2.0",
   "private": true,
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@11.20.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "open-build": "opennextjs-cloudflare build",
     "start": "next start",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix .",
-    "fmt": "prettier --check .",
-    "fmt:fix": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint --fix . --cache",
+    "fmt": "prettier --check --cache .",
+    "fmt:fix": "prettier --write --cache .",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "deploy:preview": "opennextjs-cloudflare build && wrangler deploy --name royal-hackaway-v9-preview-$(git branch --show-current | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9-]/-/g' | sed 's/--*/-/g' | cut -c1-30)",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "prepare": "husky"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
@@ -30,6 +32,7 @@
     "@tailwindcss/postcss": "^4.3.0",
     "@types/mdx": "^2.0.13",
     "clsx": "^2.1.1",
+    "husky": "^9.1.7",
     "next": "15.5.9",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -38,14 +41,22 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^24.12.4",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
     "eslint-config-next": "16.1.1",
-    "eslint-plugin-simple-import-sort": "^13.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-perfectionist": "^5.10.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
+    "globals": "^17.9.0",
     "prettier": "3.7.4",
+    "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^6.0.3",
+    "typescript-eslint": "^8.66.0",
     "wrangler": "^4.94.0"
   }
 }

@@ -1,9 +1,9 @@
 import z from 'zod'
 
 const faq = z.object({
-  title: z.string(),
-  order: z.number().optional(),
   content: z.any().optional(),
+  order: z.number().optional(),
+  title: z.string(),
 })
 
 type FAQ = z.infer<typeof faq>

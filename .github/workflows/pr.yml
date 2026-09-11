@@ -1,6 +1,9 @@
-name: Checks
+name: PR
 
 on:
+  push:
+    branches:
+        - main
   pull_request:
     types: [opened, synchronize, reopened]
 
@@ -9,16 +12,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.2
 
-      - name: Setup pnpm
+      - name: Install pnpm
         uses: pnpm/action-setup@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v6.3.0
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -26,8 +29,11 @@ jobs:
       - name: Run fmt
         run: pnpm run fmt
 
-      - name: Run lint
-        run: pnpm run lint
-
       - name: Run build
         run: pnpm run build
+
+      - name: Run typecheck
+        run: pnpm run typecheck
+
+      - name: Run lint
+        run: pnpm run lint

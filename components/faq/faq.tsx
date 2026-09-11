@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { type ReactElement } from 'react'
 
 import { metadata } from '@/content/faq/index.mdx'
 
@@ -11,11 +11,11 @@ const FAQ = (): ReactElement => {
   const faqs = getFAQs()
 
   return (
-    <div className="relative flex flex-col min-h-[50%] items-center" id="faq">
+    <div className="relative flex min-h-[50%] flex-col items-center" id="faq">
       <H2 className="mb-12">{metadata.title}</H2>
       <Accordion elements={faqs} />
       <div className="pt-8">
-        <H3 className="text-center mb-2">Got another question?</H3>
+        <H3 className="mb-2 text-center">Got another question?</H3>
         <DiscordButton />
       </div>
     </div>

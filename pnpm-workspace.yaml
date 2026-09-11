@@ -1,6 +1,5 @@
 ignoreScripts: true
 minimumReleaseAge: 10080
-trustPolicy: no-downgrade
 blockExoticSubdeps: true
 packages:
   - .

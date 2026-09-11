@@ -1,6 +1,7 @@
 'use client'
 
-import { ReactElement, useEffect, useState } from 'react'
+import { type ReactElement } from 'react'
+import { useEffect, useState } from 'react'
 
 import { CountdownValue } from './countdown-value'
 import { getDays } from './get-days'
@@ -33,12 +34,13 @@ const Countdown = ({ date }: CountdownProps): ReactElement => {
     }
 
     updateTimer()
+
     const timer = setInterval(updateTimer, 1000)
     return () => clearInterval(timer)
   }, [date])
 
   return (
-    <div className="w-full lg:grid lg:grid-cols-4 px-5 lg:px-0">
+    <div className="w-full px-5 lg:grid lg:grid-cols-4 lg:px-0">
       <CountdownValue label="days" value={days} />
       <CountdownValue label="hours" value={hours} />
       <CountdownValue label="minutes" value={minutes} />

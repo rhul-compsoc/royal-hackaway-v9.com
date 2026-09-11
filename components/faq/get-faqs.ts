@@ -1,15 +1,18 @@
-import { ComponentType } from 'react'
+// cursed MDX workarounds
+
+import { type MDXContext } from '@/lib/mdx/mdx'
 
 import { type FAQ, faq } from './types'
 
-const context = require.context('@/content/faq/questions', false, /\.mdx$/)
+interface Context {
+  title: string
+}
+
+const context = require.context('@/content/faq/questions', false, /\.mdx$/) as MDXContext<Context>
 
 const getFAQs = (): FAQ[] => {
   const faqs = context.keys().map((key) => {
-    const mod = context(key) as unknown as {
-      metadata: Omit<FAQ, 'content'>
-      default?: ComponentType
-    }
+    const mod = context(key)
 
     return {
       ...mod.metadata,
